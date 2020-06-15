@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="AntikolSys_Rollstuhl_Curtis" targetName="mega_CORE" />
+      <config projectName="AntikolSys_Rollstuhl_Curtis" targetName="AntikolSys_Rollstuhl_Curtis-size" />
+      <config projectName="AntikolSys_Rollstuhl_Curtis" targetName="upload" />
+      <config projectName="AntikolSys_Rollstuhl_Curtis" targetName="AntikolSys_Rollstuhl_Curtis-upload" />
+      <config projectName="AntikolSys_Rollstuhl_Curtis" targetName="AntikolSys_Rollstuhl_Curtis" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a2f6f45-0263-4231-baf2-5fe7953d9793" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1aes2FjOAQNIRYNvi5kxlMWJyne" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RunManager" selected="CMake Application.AntikolSys_Rollstuhl_Curtis">
+    <configuration name="AntikolSys_Rollstuhl_Curtis-size" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" TARGET_NAME="AntikolSys_Rollstuhl_Curtis-size" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AntikolSys_Rollstuhl_Curtis-upload" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" TARGET_NAME="AntikolSys_Rollstuhl_Curtis-upload" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AntikolSys_Rollstuhl_Curtis" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" TARGET_NAME="upload" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" RUN_TARGET_NAME="AntikolSys_Rollstuhl_Curtis">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_CORE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" TARGET_NAME="mega_CORE" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="upload" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AntikolSys_Rollstuhl_Curtis" TARGET_NAME="upload" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.AntikolSys_Rollstuhl_Curtis-size" />
+      <item itemvalue="CMake Application.AntikolSys_Rollstuhl_Curtis-upload" />
+      <item itemvalue="CMake Application.AntikolSys_Rollstuhl_Curtis" />
+      <item itemvalue="CMake Application.mega_CORE" />
+      <item itemvalue="CMake Application.upload" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a2f6f45-0263-4231-baf2-5fe7953d9793" name="Default Changelist" comment="" />
+      <created>1587107184647</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587107184647</updated>
+      <workItem from="1587107185886" duration="129000" />
+      <workItem from="1587107541353" duration="6643000" />
+      <workItem from="1588158111755" duration="5105000" />
+      <workItem from="1588229513201" duration="5923000" />
+      <workItem from="1588935573279" duration="623000" />
+      <workItem from="1589351007160" duration="512000" />
+      <workItem from="1589351583329" duration="83000" />
+      <workItem from="1589353462149" duration="73000" />
+      <workItem from="1589353612092" duration="457000" />
+      <workItem from="1589354108800" duration="153000" />
+      <workItem from="1589354265669" duration="100000" />
+      <workItem from="1589356394987" duration="13000" />
+      <workItem from="1589358541393" duration="67000" />
+      <workItem from="1589360240678" duration="2265000" />
+      <workItem from="1592205994914" duration="7177000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="303" y="201" width="1092" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589361515805">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="303" y="201" width="1092" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589361515805" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1589361475653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589361475653" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1587108019376">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1587108019376" />
+    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1589351594766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589351594766" />
+  </component>
+</project>

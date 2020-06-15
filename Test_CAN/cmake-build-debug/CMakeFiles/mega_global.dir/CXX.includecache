@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Program Files (x86)/Arduino/libraries/Canbus/defaults.h
+
+C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h
+
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.cpp
+mcp2515.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.h
+avr/io.h
+-
+util/delay.h
+-
+Arduino.h
+-
+Wprogram.h
+-
+stdint.h
+-
+avr/pgmspace.h
+-
+global.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h
+mcp2515.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.h
+mcp2515_defs.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h
+defaults.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/defaults.h
+
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.h
+inttypes.h
+-
+mcp2515_defs.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h
+global.h
+C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h
+
+C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h
+

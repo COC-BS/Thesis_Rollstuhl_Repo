@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Test_CAN"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\Platform\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_global">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_global.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_global"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_global/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_global.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_global/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_CORE">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_CORE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_CORE"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_CORE/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_CORE.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_CORE/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_mcp2515.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_mcp2515.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_CAN">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Test_CAN.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_CAN"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_CAN/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Test_CAN.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_CAN/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515_defs">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_mcp2515_defs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515_defs"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515_defs/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_mcp2515_defs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515_defs/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_Canbus">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_Canbus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_Canbus"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_Canbus/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_Canbus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_Canbus/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_defaults">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_defaults.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_defaults"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_defaults/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_defaults.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_defaults/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_CAN-size">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_CAN-size"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test_CAN-upload">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test_CAN-upload"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upload">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 upload"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Arduino.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/CDC.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Client.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial1.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial2.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial3.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/HardwareSerial_private.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/IPAddress.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/IPAddress.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/PluggableUSB.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/PluggableUSB.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Print.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Print.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Printable.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Server.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Stream.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Stream.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Tone.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBAPI.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBCore.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBCore.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/USBDesc.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/Udp.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WCharacter.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WInterrupts.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WMath.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WString.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/WString.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/abi.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/binary.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/hooks.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/main.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/new.cpp">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/new.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_analog.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_digital.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_private.h">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_pulse.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c">
+			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.cpp">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/global.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515"/>
+			<Option target="mega_mcp2515_defs"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.c">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515"/>
+			<Option target="mega_mcp2515_defs"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515"/>
+			<Option target="mega_mcp2515_defs"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515"/>
+			<Option target="mega_mcp2515_defs"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/Test_CAN.ino">
+			<Option target="Test_CAN"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp">
+			<Option target="Test_CAN"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp.rule">
+			<Option target="Test_CAN"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/cmake/ArduinoToolchain.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/cyril/CLionProjects/Test_CAN/cmake/Platform/Arduino.cmake">
+			<Option virtualFolder="CMake Files\cmake\Platform\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

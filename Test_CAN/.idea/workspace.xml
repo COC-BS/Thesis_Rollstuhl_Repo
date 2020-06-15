@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Test_CAN" targetName="upload" />
+      <config projectName="Test_CAN" targetName="mega_CORE" />
+      <config projectName="Test_CAN" targetName="mega_mcp2515_defs" />
+      <config projectName="Test_CAN" targetName="mega_Canbus" />
+      <config projectName="Test_CAN" targetName="Test_CAN-size" />
+      <config projectName="Test_CAN" targetName="mega_global" />
+      <config projectName="Test_CAN" targetName="Test_CAN-upload" />
+      <config projectName="Test_CAN" targetName="mega_mcp2515" />
+      <config projectName="Test_CAN" targetName="Test_CAN" />
+      <config projectName="Test_CAN" targetName="mega_defaults" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8e5608ad-b116-4085-8abf-324623f271c0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-Test_CAN" />
+  </component>
+  <component name="ProjectId" id="1bqKfJRy1RRLfTeLNejzBGICgnH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis" />
+  </component>
+  <component name="RunManager" selected="CMake Application.Test_CAN">
+    <configuration name="Test_CAN-size" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="Test_CAN-size" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_CAN-upload" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="Test_CAN-upload" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_CAN" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="upload" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Test_CAN" RUN_TARGET_NAME="Test_CAN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_CORE" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_CORE" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_Canbus" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_Canbus" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_defaults" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_defaults" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_global" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_global" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_mcp2515" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_mcp2515" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mega_mcp2515_defs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="mega_mcp2515_defs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="upload" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="upload" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.mega_Canbus" />
+      <item itemvalue="CMake Application.mega_CORE" />
+      <item itemvalue="CMake Application.mega_defaults" />
+      <item itemvalue="CMake Application.mega_global" />
+      <item itemvalue="CMake Application.mega_mcp2515" />
+      <item itemvalue="CMake Application.mega_mcp2515_defs" />
+      <item itemvalue="CMake Application.Test_CAN" />
+      <item itemvalue="CMake Application.Test_CAN-size" />
+      <item itemvalue="CMake Application.Test_CAN-upload" />
+      <item itemvalue="CMake Application.upload" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e5608ad-b116-4085-8abf-324623f271c0" name="Default Changelist" comment="" />
+      <created>1589354285077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589354285077</updated>
+      <workItem from="1589354286459" duration="967000" />
+      <workItem from="1589355406751" duration="7131000" />
+      <workItem from="1589370905636" duration="5620000" />
+      <workItem from="1589478255170" duration="273000" />
+      <workItem from="1591081067763" duration="11243000" />
+      <workItem from="1592201905846" duration="5194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="291" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589361510093">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="291" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589361510093" />
+    <state x="680" y="256" key="FileChooserDialogImpl" timestamp="1592205990927">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="256" key="FileChooserDialogImpl/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1592205990927" />
+    <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1589356391198" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804404" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804404" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1589377981945">
+      <screen x="-2256" y="0" width="1504" height="976" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592201913332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1592201913332" />
+    <state x="514" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1589478255117" />
+    <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589373738792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373738792" />
+  </component>
+</project>

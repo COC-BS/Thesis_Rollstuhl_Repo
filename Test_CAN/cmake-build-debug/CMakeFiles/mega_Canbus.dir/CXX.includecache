@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.cpp
+Arduino.h
+-
+Wprogram.h
+-
+stdint.h
+-
+avr/pgmspace.h
+-
+stdio.h
+-
+avr/io.h
+-
+avr/interrupt.h
+-
+util/delay.h
+-
+pins_arduino.h
+C:/Program Files (x86)/Arduino/libraries/Canbus/pins_arduino.h
+inttypes.h
+-
+global.h
+C:/Program Files (x86)/Arduino/libraries/Canbus/global.h
+mcp2515/mcp2515.h
+C:/Program Files (x86)/Arduino/libraries/Canbus/mcp2515/mcp2515.h
+defaults.h
+C:/Program Files (x86)/Arduino/libraries/Canbus/defaults.h
+Canbus.h
+C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.h
+
+C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.h
+
+C:/Program Files (x86)/Arduino/libraries/Canbus/defaults.h
+
+C:/Program Files (x86)/Arduino/libraries/Canbus/global.h
+

@@ -1,0 +1,12 @@
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_global.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_CORE.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_mcp2515.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/Test_CAN.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_mcp2515_defs.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_Canbus.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_defaults.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/Test_CAN-size.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/Test_CAN-upload.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/upload.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/rebuild_cache.dir

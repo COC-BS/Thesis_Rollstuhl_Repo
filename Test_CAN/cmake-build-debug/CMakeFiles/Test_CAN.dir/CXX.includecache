@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp
+Arduino.h
+-
+mcp2515/mcp2515.h
+-
+mcp2515/mcp2515_defs.h
+-
+Canbus/Canbus.h
+-
+Arduino.h
+C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Arduino.h
+

@@ -1,0 +1,23 @@
+"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\cyril\CLionProjects\Test_CAN
+-- Generating Test_CAN
+-- Generating mega_mcp2515 for library mcp2515
+-- Generating mega_global for library global
+-- Found library global needs mega_mcp2515
+-- Found library global needs mega_mcp2515
+-- Generating mega_mcp2515_defs for library mcp2515_defs
+-- Found library mcp2515_defs needs mega_global
+-- Found library mcp2515_defs needs mega_mcp2515
+-- Found library mcp2515_defs needs mega_global
+-- Found library mcp2515 needs mega_mcp2515;mega_global;mega_mcp2515_defs
+-- Generating mega_Canbus for library Canbus
+-- Found library Canbus needs mega_global
+-- Found library Canbus needs mega_mcp2515
+-- Generating mega_defaults for library defaults
+-- Found library defaults needs mega_mcp2515
+-- Found library defaults needs mega_global
+-- Found library defaults needs mega_mcp2515
+-- Found library Canbus needs mega_global;mega_mcp2515;mega_Canbus;mega_defaults
+-- Using C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-objcopy.exe for converting firmware image to hex
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug

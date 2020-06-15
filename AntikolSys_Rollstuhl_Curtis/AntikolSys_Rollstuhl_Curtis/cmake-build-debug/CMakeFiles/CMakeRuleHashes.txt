@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+edcde66b4b747966c09def099e226966 AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp
+277352a8307db410bc34e955cb847fe2 CMakeFiles/AntikolSys_Rollstuhl_Curtis-size
+5564ae3946ea8df7d66d51f4e8693167 CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload
