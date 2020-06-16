@@ -11,6 +11,8 @@ RPLidar/RPLidar.h
 -
 Arduino.h
 -
+math.h
+-
 Arduino.h
 C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Arduino.h
 

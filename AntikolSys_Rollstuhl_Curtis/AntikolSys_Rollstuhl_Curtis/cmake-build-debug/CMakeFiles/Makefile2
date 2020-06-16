@@ -217,9 +217,9 @@ CMakeFiles/mega_rptypes.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_CORE.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_RPLidar.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rplidar_cmd.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rptypes.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_RPLidar.dir/all
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/depend
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target AntikolSys_Rollstuhl_Curtis"
