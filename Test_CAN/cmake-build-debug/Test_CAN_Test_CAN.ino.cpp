@@ -61,6 +61,7 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
 
     //====== Write on CAN-Bus =========================================
 
+
     message.id = 0x03E; //formatted in HEX
     message.header.rtr = 0;
     message.header.length = 8; //formatted in DEC
@@ -74,8 +75,27 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
 
     delay(10);
 
+
     //====== Read from CAN-Bus =========================================
 
+        int joystickDirection;
+        int joystickSpeed;
+
+        if (mcp2515_get_message(&message))
+        {
+            //Joystick-Data
+            /*
+            if(message.id == 0x081) //Filter ID
+            {
+                joystickDirection = message.data[0];
+                joystickSpeed = message.data[1];
+
+                Serial.println("Joystick:   Direction: " + String(joystickDirection) + ";  Speed: " + String(joystickSpeed));
+            }
+             */
+        }
+
+        /* Motorenencoder auslesen
         if (mcp2515_get_message(&message))
         {
             if(message.id == 0x7FF) //Filter ID
@@ -86,5 +106,6 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
                 Serial.println("Encoder:   Left: " + String(currSpeedLeft) + ";  Right: " + String(currSpeedRight));
             }
         }
+        */
 
 }

@@ -5,12 +5,12 @@
       <config projectName="Test_CAN" targetName="upload" />
       <config projectName="Test_CAN" targetName="mega_CORE" />
       <config projectName="Test_CAN" targetName="mega_mcp2515_defs" />
-      <config projectName="Test_CAN" targetName="Test_CAN" />
+      <config projectName="Test_CAN" targetName="mega_Canbus" />
       <config projectName="Test_CAN" targetName="Test_CAN-size" />
       <config projectName="Test_CAN" targetName="mega_global" />
       <config projectName="Test_CAN" targetName="Test_CAN-upload" />
       <config projectName="Test_CAN" targetName="mega_mcp2515" />
-      <config projectName="Test_CAN" targetName="mega_Canbus" />
+      <config projectName="Test_CAN" targetName="Test_CAN" />
       <config projectName="Test_CAN" targetName="mega_defaults" />
     </generated>
   </component>
@@ -21,13 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e5608ad-b116-4085-8abf-324623f271c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_CAN.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Test_CAN.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
@@ -130,15 +131,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.mega_Canbus" />
+      <item itemvalue="CMake Application.Test_CAN-size" />
+      <item itemvalue="CMake Application.Test_CAN-upload" />
+      <item itemvalue="CMake Application.Test_CAN" />
       <item itemvalue="CMake Application.mega_CORE" />
+      <item itemvalue="CMake Application.mega_Canbus" />
       <item itemvalue="CMake Application.mega_defaults" />
       <item itemvalue="CMake Application.mega_global" />
       <item itemvalue="CMake Application.mega_mcp2515" />
       <item itemvalue="CMake Application.mega_mcp2515_defs" />
-      <item itemvalue="CMake Application.Test_CAN" />
-      <item itemvalue="CMake Application.Test_CAN-size" />
-      <item itemvalue="CMake Application.Test_CAN-upload" />
       <item itemvalue="CMake Application.upload" />
     </list>
   </component>
@@ -159,6 +160,9 @@
       <workItem from="1591081067763" duration="11243000" />
       <workItem from="1592201905846" duration="5194000" />
       <workItem from="1592286198650" duration="3305000" />
+      <workItem from="1593497565337" duration="2490000" />
+      <workItem from="1593594889708" duration="1533000" />
+      <workItem from="1593671457050" duration="1420000" />
     </task>
     <servers />
   </component>
@@ -212,11 +216,12 @@
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592201913332">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1593675358270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1592201913332" />
     <state x="514" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1589478255117" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1593675358270" />
     <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589373738792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,5 +1,14 @@
 "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis
 -- Generating AntikolSys_Rollstuhl_Curtis
+-- Generating mega_RPLidar for library RPLidar
+-- Generating mega_rptypes for library rptypes
+-- Found library rptypes needs mega_RPLidar
+-- Found library rptypes needs mega_RPLidar
+-- Generating mega_rplidar_cmd for library rplidar_cmd
+-- Found library rplidar_cmd needs mega_rptypes
+-- Found library rplidar_cmd needs mega_RPLidar
+-- Found library rplidar_cmd needs mega_rptypes
+-- Found library RPLidar needs mega_RPLidar;mega_rptypes;mega_rplidar_cmd
 -- Using C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-objcopy.exe for converting firmware image to hex
 -- Configuring done
 -- Generating done
