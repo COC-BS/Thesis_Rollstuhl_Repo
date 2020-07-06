@@ -11,8 +11,8 @@
 #include "Arduino.h"
 
 //=== START Forward: C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino
- void motorCommands() ;
- void motorCommands() ;
+ void motorCommandRotation(float phi) ;
+ void motorCommandRotation(float phi) ;
  void driveControl () ;
  void driveControl () ;
  void detectDoor (int edgeThreshold) ;
@@ -60,7 +60,7 @@ boolean scanFlag = true;
 #define RPLIDAR_MOTOR 3 // The PWM pin for control the speed of RPLIDAR's motor.
 // This pin should connected with the RPLIDAR's MOTOCTRL signal
 
-void motorCommands() {
+void motorCommandRotation(float phi) {
 
 
 
@@ -93,21 +93,31 @@ void driveControl () {
     s.y = d.y + b * w.y;
 
     float radius = sqrt(pow(s.x,2) + pow(s.y,2));
+    float betrag = sqrt(pow(d.x,2) + pow(d.y,2));
+
+    float phi = 90 - (acos((s.x*d.x+s.y*d.y)/(radius * sqrt(pow(d.x,2) + pow(d.y,2))))*180/PI);
 
 
     Serial.println("#============= Drive Control Points ============");
-    Serial.print("Mitte Tuer  d.x: ");
-    Serial.print(d.x);
-    Serial.print("  d.y: ");
-    Serial.println(d.y);
-
     Serial.print("Schnittpunkt  s.x: ");
     Serial.print(s.x);
     Serial.print("  s.y: ");
     Serial.println(s.y);
 
+    Serial.print("Mitte Tuer  d.x: ");
+    Serial.print(d.x);
+    Serial.print("  d.y: ");
+    Serial.println(d.y);
+
     Serial.print("Radius: ");
     Serial.println(radius);
+    Serial.print("Betrag d: ");
+    Serial.println(betrag);
+
+    Serial.print("Winkel Phi: ");
+    Serial.println(phi);
+
+    motorCommandRotation(phi);
 
     delay(10000);
 }
