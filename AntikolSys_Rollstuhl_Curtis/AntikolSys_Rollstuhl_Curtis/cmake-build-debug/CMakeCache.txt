@@ -296,6 +296,9 @@ ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
 ProcessorCount_cmd_uname:FILEPATH=ProcessorCount_cmd_uname-NOTFOUND
 
 //Dependencies for the target
+mega_PID_v1_LIB_DEPENDS:STATIC=general;mega_CORE;
+
+//Dependencies for the target
 mega_RPLidar_LIB_DEPENDS:STATIC=general;mega_CORE;
 
 //Dependencies for the target

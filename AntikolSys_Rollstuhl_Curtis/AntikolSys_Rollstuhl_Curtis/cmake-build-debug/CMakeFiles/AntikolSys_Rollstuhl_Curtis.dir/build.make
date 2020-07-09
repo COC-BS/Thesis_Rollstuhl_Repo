@@ -85,6 +85,7 @@ AntikolSys_Rollstuhl_Curtis.elf: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/buil
 AntikolSys_Rollstuhl_Curtis.elf: libmega_RPLidar.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_rptypes.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_rplidar_cmd.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_PID_v1.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_CORE.a
 AntikolSys_Rollstuhl_Curtis.elf: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AntikolSys_Rollstuhl_Curtis.elf"

@@ -32,6 +32,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/src"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/CDC.cpp" "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_CORE.dir/C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/CDC.cpp.obj"
@@ -71,6 +74,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/src"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"
   )
 
 # Targets to which this target links.

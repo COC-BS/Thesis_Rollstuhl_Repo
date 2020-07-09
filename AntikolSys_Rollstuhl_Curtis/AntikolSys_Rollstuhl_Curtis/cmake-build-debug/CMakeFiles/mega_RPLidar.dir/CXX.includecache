@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.cpp
-RPLidar.h
-C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.h
-
-C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.h
-Arduino.h
-C:/Program Files (x86)/Arduino/libraries/RPLidar/Arduino.h
-inc/rptypes.h
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/rptypes.h
-inc/rplidar_cmd.h
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/rplidar_cmd.h
-
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/rplidar_cmd.h
-inc/rplidar_protocol.h
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/inc/rplidar_protocol.h
-
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/rplidar_protocol.h
-
-C:/Program Files (x86)/Arduino/libraries/RPLidar/inc/rptypes.h
-stdint.h
--
-

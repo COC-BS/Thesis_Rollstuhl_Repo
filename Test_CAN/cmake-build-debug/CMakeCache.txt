@@ -299,6 +299,9 @@ Test_CAN_SOURCE_DIR:STATIC=C:/Users/cyril/CLionProjects/Test_CAN
 mega_Canbus_LIB_DEPENDS:STATIC=general;mega_CORE;
 
 //Dependencies for the target
+mega_PID_v1_LIB_DEPENDS:STATIC=general;mega_CORE;
+
+//Dependencies for the target
 mega_SPI_LIB_DEPENDS:STATIC=general;mega_CORE;
 
 //Dependencies for the target

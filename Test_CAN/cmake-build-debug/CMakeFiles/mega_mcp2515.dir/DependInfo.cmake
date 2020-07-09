@@ -25,6 +25,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/src"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"
   )
 
 # Targets to which this target links.

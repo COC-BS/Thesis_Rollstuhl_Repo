@@ -15,4 +15,5 @@ CMakeFiles\Test_CAN.dir\Test_CAN_Test_CAN.ino.cpp.obj: \
  C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h \
  C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/global.h \
  C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h \
- C:/Program\ Files\ (x86)/Arduino/libraries/Canbus/Canbus.h
+ C:/Program\ Files\ (x86)/Arduino/libraries/Canbus/Canbus.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/PID_v1/PID_v1.h

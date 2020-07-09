@@ -90,6 +90,7 @@ Test_CAN.elf: libmega_global.a
 Test_CAN.elf: libmega_mcp2515.a
 Test_CAN.elf: libmega_Canbus.a
 Test_CAN.elf: libmega_defaults.a
+Test_CAN.elf: libmega_PID_v1.a
 Test_CAN.elf: libmega_CORE.a
 Test_CAN.elf: CMakeFiles/Test_CAN.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\cyril\CLionProjects\Test_CAN\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Test_CAN.elf"

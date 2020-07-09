@@ -39,6 +39,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -72,6 +75,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -105,6 +111,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -138,12 +147,87 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_CORE/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1/fast">
+				<Option output="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -171,6 +255,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -204,6 +291,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -237,6 +327,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -270,6 +363,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -303,6 +399,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -336,6 +435,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -369,6 +471,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -402,6 +507,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -435,6 +543,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -468,6 +579,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -674,6 +788,12 @@
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/global.h">
 			<Option target="mega_Canbus"/>
 			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/PID_v1/PID_v1.cpp">
+			<Option target="mega_PID_v1"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/PID_v1/PID_v1.h">
+			<Option target="mega_PID_v1"/>
 		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h">
 			<Option target="mega_global"/>

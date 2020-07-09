@@ -1,10 +1,10 @@
 
-// This sketch code is based on the RPLIDAR driver library provided by RoboPeak
+
 #include <RPLidar/RPLidar.h>
+#include <PID_v1/PID_v1.h>
 #include <Arduino.h>
 #include <math.h>
 
-// You need to create an driver instance
 RPLidar lidar;
 
 struct Vector {
@@ -33,20 +33,22 @@ int sensorOffsetY = 20;
 
 int edgeThreshhold = -50;
 
+float phi;
+
+int status = 0;
 boolean scanFlag = true;
 
-#define RPLIDAR_MOTOR 3 // The PWM pin for control the speed of RPLIDAR's motor.
-// This pin should connected with the RPLIDAR's MOTOCTRL signal
+#define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 
 void motorCommandRotation(float phi) {
-
+    Serial.println("Bruuuuum   " + String(phi));
 
 
 
 }
 
 
-void driveControl () {
+void calcDriveAngle () {
     //Joystick Addresse: 0x081; Byte 0 = Direction; Byte 1 = Speed
 
     Points middleDoor;
@@ -73,7 +75,7 @@ void driveControl () {
     float radius = sqrt(pow(s.x,2) + pow(s.y,2));
     float betrag = sqrt(pow(d.x,2) + pow(d.y,2));
 
-    float phi = 90 - (acos((s.x*d.x+s.y*d.y)/(radius * sqrt(pow(d.x,2) + pow(d.y,2))))*180/PI);
+    phi = 90 - (acos((s.x*d.x+s.y*d.y)/(radius * sqrt(pow(d.x,2) + pow(d.y,2))))*180/PI);
 
 
     Serial.println("#============= Drive Control Points ============");
@@ -92,10 +94,9 @@ void driveControl () {
 
     Serial.print("Winkel Phi: ");
     Serial.println(phi);
+    Serial.println("#============================================");
 
-    motorCommandRotation(phi);
-
-    delay(10000);
+    status = 2;
 }
                
 
@@ -183,9 +184,10 @@ void detectDoor (int edgeThreshold) {
         Serial.println(doorPoints[j].y);
     }
 
-    if (door) {
-        driveControl();
-    }
+    if (doorIndex == 2)
+        status = 1;
+    else if (doorIndex == 0 || doorIndex > 2)
+        status = 0;
 }
 
 void scanLidar () {
@@ -256,10 +258,18 @@ void setup() {
 
 void loop() {
     //Scan for Points with the LIDAR and search a Door
-    scanLidar();
+    switch (status) {
+        case 0: scanLidar();
+            break;
+        case 1: calcDriveAngle();
+            break;
+        case 2:
+            motorCommandRotation(phi);
+            break;
+
+    }
 
 
-    //State Machine
     //Flag wenn mehrere Türen gefunden werden und Error!!
     //Versatz des Sensors vom Mittelpunkt, Variable Sensor Offset!
 

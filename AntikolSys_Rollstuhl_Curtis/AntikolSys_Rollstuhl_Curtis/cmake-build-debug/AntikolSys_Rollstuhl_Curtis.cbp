@@ -33,6 +33,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -60,22 +63,15 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_CORE/fast"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="upload">
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 upload"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -97,6 +93,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -124,12 +123,75 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_RPLidar/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -151,6 +213,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -178,6 +243,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -205,6 +273,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -232,6 +303,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -259,6 +333,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -286,6 +363,9 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
 					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
@@ -312,6 +392,16 @@
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntikolSys_Rollstuhl_Curtis-size"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="upload">
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 upload"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -466,6 +556,12 @@
 		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c">
 			<Option target="mega_CORE"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/PID_v1/PID_v1.cpp">
+			<Option target="mega_PID_v1"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/PID_v1/PID_v1.h">
+			<Option target="mega_PID_v1"/>
 		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.cpp">
 			<Option target="mega_RPLidar"/>

@@ -25,6 +25,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"
   "C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/src"
+  "C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"
   )
 
 # Targets to which this target links.
@@ -34,6 +37,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_mcp2515_defs.dir/DependInfo.cmake"
   "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_Canbus.dir/DependInfo.cmake"
   "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_defaults.dir/DependInfo.cmake"
+  "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_PID_v1.dir/DependInfo.cmake"
   "C:/Users/cyril/CLionProjects/Test_CAN/cmake-build-debug/CMakeFiles/mega_CORE.dir/DependInfo.cmake"
   )
 

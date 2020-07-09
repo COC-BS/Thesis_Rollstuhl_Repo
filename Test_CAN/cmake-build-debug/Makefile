@@ -136,6 +136,19 @@ mega_CORE/fast:
 .PHONY : mega_CORE/fast
 
 #=============================================================================
+# Target rules for targets named mega_PID_v1
+
+# Build rule for target.
+mega_PID_v1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_PID_v1
+.PHONY : mega_PID_v1
+
+# fast build rule for target.
+mega_PID_v1/fast:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/build
+.PHONY : mega_PID_v1/fast
+
+#=============================================================================
 # Target rules for targets named mega_mcp2515
 
 # Build rule for target.
@@ -917,6 +930,33 @@ C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s:
 	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
 
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj: C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.obj
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj
+
+# target to build an object file
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.obj:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.obj
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.obj
+
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.i: C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.i
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.i
+
+# target to preprocess a source file
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.i:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.i
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.i
+
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.s: C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.s
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.s
+
+# target to generate assembly for a file
+C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.s:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.s
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.s
+
 C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj: C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
 
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj
@@ -985,6 +1025,7 @@ help:
 	@echo ... depend
 	@echo ... mega_global
 	@echo ... mega_CORE
+	@echo ... mega_PID_v1
 	@echo ... mega_mcp2515
 	@echo ... Test_CAN
 	@echo ... mega_mcp2515_defs
@@ -1070,6 +1111,9 @@ help:
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.obj
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.i
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.s
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.i
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.s
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.i
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.s
