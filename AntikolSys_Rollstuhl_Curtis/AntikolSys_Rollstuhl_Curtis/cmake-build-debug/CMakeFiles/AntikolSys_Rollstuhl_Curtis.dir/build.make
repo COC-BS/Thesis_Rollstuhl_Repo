@@ -85,6 +85,13 @@ AntikolSys_Rollstuhl_Curtis.elf: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/buil
 AntikolSys_Rollstuhl_Curtis.elf: libmega_RPLidar.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_rptypes.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_rplidar_cmd.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_mcp2515.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_global.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_mcp2515_defs.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_global.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_mcp2515.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_Canbus.a
+AntikolSys_Rollstuhl_Curtis.elf: libmega_defaults.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_PID_v1.a
 AntikolSys_Rollstuhl_Curtis.elf: libmega_CORE.a
 AntikolSys_Rollstuhl_Curtis.elf: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/link.txt

@@ -52,24 +52,34 @@ CMAKE_BINARY_DIR = C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\Anti
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/mega_global.dir/all
 all: CMakeFiles/mega_CORE.dir/all
+all: CMakeFiles/mega_mcp2515_defs.dir/all
 all: CMakeFiles/mega_RPLidar.dir/all
-all: CMakeFiles/mega_PID_v1.dir/all
-all: CMakeFiles/mega_rplidar_cmd.dir/all
 all: CMakeFiles/mega_rptypes.dir/all
+all: CMakeFiles/mega_mcp2515.dir/all
+all: CMakeFiles/mega_rplidar_cmd.dir/all
+all: CMakeFiles/mega_Canbus.dir/all
+all: CMakeFiles/mega_defaults.dir/all
+all: CMakeFiles/mega_PID_v1.dir/all
 all: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/mega_global.dir/clean
 clean: CMakeFiles/mega_CORE.dir/clean
+clean: CMakeFiles/mega_mcp2515_defs.dir/clean
 clean: CMakeFiles/mega_RPLidar.dir/clean
-clean: CMakeFiles/mega_PID_v1.dir/clean
-clean: CMakeFiles/mega_rplidar_cmd.dir/clean
 clean: CMakeFiles/mega_rptypes.dir/clean
+clean: CMakeFiles/mega_mcp2515.dir/clean
+clean: CMakeFiles/mega_rplidar_cmd.dir/clean
+clean: CMakeFiles/mega_Canbus.dir/clean
+clean: CMakeFiles/mega_defaults.dir/clean
+clean: CMakeFiles/mega_PID_v1.dir/clean
 clean: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/clean
-clean: CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
 clean: CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/clean
+clean: CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
 clean: CMakeFiles/upload.dir/clean
 
 .PHONY : clean
@@ -78,6 +88,33 @@ clean: CMakeFiles/upload.dir/clean
 preinstall:
 
 .PHONY : preinstall
+
+#=============================================================================
+# Target rules for target CMakeFiles/mega_global.dir
+
+# All Build rule for target.
+CMakeFiles/mega_global.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/depend
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=38,39 "Built target mega_global"
+.PHONY : CMakeFiles/mega_global.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_global.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_global.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_global.dir/rule
+
+# Convenience name for target.
+mega_global: CMakeFiles/mega_global.dir/rule
+
+.PHONY : mega_global
+
+# clean rule for target.
+CMakeFiles/mega_global.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/clean
+.PHONY : CMakeFiles/mega_global.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mega_CORE.dir
@@ -107,13 +144,40 @@ CMakeFiles/mega_CORE.dir/clean:
 .PHONY : CMakeFiles/mega_CORE.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/mega_mcp2515_defs.dir
+
+# All Build rule for target.
+CMakeFiles/mega_mcp2515_defs.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/depend
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=42,43 "Built target mega_mcp2515_defs"
+.PHONY : CMakeFiles/mega_mcp2515_defs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_mcp2515_defs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_mcp2515_defs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_mcp2515_defs.dir/rule
+
+# Convenience name for target.
+mega_mcp2515_defs: CMakeFiles/mega_mcp2515_defs.dir/rule
+
+.PHONY : mega_mcp2515_defs
+
+# clean rule for target.
+CMakeFiles/mega_mcp2515_defs.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/clean
+.PHONY : CMakeFiles/mega_mcp2515_defs.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/mega_RPLidar.dir
 
 # All Build rule for target.
 CMakeFiles/mega_RPLidar.dir/all: CMakeFiles/mega_CORE.dir/all
 	$(MAKE) -f CMakeFiles\mega_RPLidar.dir\build.make CMakeFiles/mega_RPLidar.dir/depend
 	$(MAKE) -f CMakeFiles\mega_RPLidar.dir\build.make CMakeFiles/mega_RPLidar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=32,33 "Built target mega_RPLidar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=34,35 "Built target mega_RPLidar"
 .PHONY : CMakeFiles/mega_RPLidar.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,67 +198,13 @@ CMakeFiles/mega_RPLidar.dir/clean:
 .PHONY : CMakeFiles/mega_RPLidar.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mega_PID_v1.dir
-
-# All Build rule for target.
-CMakeFiles/mega_PID_v1.dir/all: CMakeFiles/mega_CORE.dir/all
-	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/depend
-	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=30,31 "Built target mega_PID_v1"
-.PHONY : CMakeFiles/mega_PID_v1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/mega_PID_v1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_PID_v1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/mega_PID_v1.dir/rule
-
-# Convenience name for target.
-mega_PID_v1: CMakeFiles/mega_PID_v1.dir/rule
-
-.PHONY : mega_PID_v1
-
-# clean rule for target.
-CMakeFiles/mega_PID_v1.dir/clean:
-	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/clean
-.PHONY : CMakeFiles/mega_PID_v1.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/mega_rplidar_cmd.dir
-
-# All Build rule for target.
-CMakeFiles/mega_rplidar_cmd.dir/all: CMakeFiles/mega_CORE.dir/all
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/depend
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=34,35 "Built target mega_rplidar_cmd"
-.PHONY : CMakeFiles/mega_rplidar_cmd.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/mega_rplidar_cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_rplidar_cmd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/mega_rplidar_cmd.dir/rule
-
-# Convenience name for target.
-mega_rplidar_cmd: CMakeFiles/mega_rplidar_cmd.dir/rule
-
-.PHONY : mega_rplidar_cmd
-
-# clean rule for target.
-CMakeFiles/mega_rplidar_cmd.dir/clean:
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/clean
-.PHONY : CMakeFiles/mega_rplidar_cmd.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/mega_rptypes.dir
 
 # All Build rule for target.
 CMakeFiles/mega_rptypes.dir/all: CMakeFiles/mega_CORE.dir/all
 	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/depend
 	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=36,37 "Built target mega_rptypes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=46,47 "Built target mega_rptypes"
 .PHONY : CMakeFiles/mega_rptypes.dir/all
 
 # Build rule for subdir invocation for target.
@@ -215,14 +225,154 @@ CMakeFiles/mega_rptypes.dir/clean:
 .PHONY : CMakeFiles/mega_rptypes.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/mega_mcp2515.dir
+
+# All Build rule for target.
+CMakeFiles/mega_mcp2515.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/depend
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=40,41 "Built target mega_mcp2515"
+.PHONY : CMakeFiles/mega_mcp2515.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_mcp2515.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_mcp2515.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_mcp2515.dir/rule
+
+# Convenience name for target.
+mega_mcp2515: CMakeFiles/mega_mcp2515.dir/rule
+
+.PHONY : mega_mcp2515
+
+# clean rule for target.
+CMakeFiles/mega_mcp2515.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/clean
+.PHONY : CMakeFiles/mega_mcp2515.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mega_rplidar_cmd.dir
+
+# All Build rule for target.
+CMakeFiles/mega_rplidar_cmd.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/depend
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=44,45 "Built target mega_rplidar_cmd"
+.PHONY : CMakeFiles/mega_rplidar_cmd.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_rplidar_cmd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_rplidar_cmd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_rplidar_cmd.dir/rule
+
+# Convenience name for target.
+mega_rplidar_cmd: CMakeFiles/mega_rplidar_cmd.dir/rule
+
+.PHONY : mega_rplidar_cmd
+
+# clean rule for target.
+CMakeFiles/mega_rplidar_cmd.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/clean
+.PHONY : CMakeFiles/mega_rplidar_cmd.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mega_Canbus.dir
+
+# All Build rule for target.
+CMakeFiles/mega_Canbus.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/depend
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=30,31 "Built target mega_Canbus"
+.PHONY : CMakeFiles/mega_Canbus.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_Canbus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_Canbus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_Canbus.dir/rule
+
+# Convenience name for target.
+mega_Canbus: CMakeFiles/mega_Canbus.dir/rule
+
+.PHONY : mega_Canbus
+
+# clean rule for target.
+CMakeFiles/mega_Canbus.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/clean
+.PHONY : CMakeFiles/mega_Canbus.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mega_defaults.dir
+
+# All Build rule for target.
+CMakeFiles/mega_defaults.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/depend
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=36,37 "Built target mega_defaults"
+.PHONY : CMakeFiles/mega_defaults.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_defaults.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_defaults.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_defaults.dir/rule
+
+# Convenience name for target.
+mega_defaults: CMakeFiles/mega_defaults.dir/rule
+
+.PHONY : mega_defaults
+
+# clean rule for target.
+CMakeFiles/mega_defaults.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/clean
+.PHONY : CMakeFiles/mega_defaults.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/mega_PID_v1.dir
+
+# All Build rule for target.
+CMakeFiles/mega_PID_v1.dir/all: CMakeFiles/mega_CORE.dir/all
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/depend
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=32,33 "Built target mega_PID_v1"
+.PHONY : CMakeFiles/mega_PID_v1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/mega_PID_v1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 27
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mega_PID_v1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/mega_PID_v1.dir/rule
+
+# Convenience name for target.
+mega_PID_v1: CMakeFiles/mega_PID_v1.dir/rule
+
+.PHONY : mega_PID_v1
+
+# clean rule for target.
+CMakeFiles/mega_PID_v1.dir/clean:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/clean
+.PHONY : CMakeFiles/mega_PID_v1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir
 
 # All Build rule for target.
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rplidar_cmd.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rptypes.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_RPLidar.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_CORE.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_defaults.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_PID_v1.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rptypes.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515_defs.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_CORE.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rplidar_cmd.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_Canbus.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_global.dir/all
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/depend
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target AntikolSys_Rollstuhl_Curtis"
@@ -230,7 +380,7 @@ CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_PID_v1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 46
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/rule
@@ -246,33 +396,6 @@ CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/clean:
 .PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir
-
-# All Build rule for target.
-CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all
-	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/depend
-	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num= "Built target AntikolSys_Rollstuhl_Curtis-upload"
-.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 36
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule
-
-# Convenience name for target.
-AntikolSys_Rollstuhl_Curtis-upload: CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule
-
-.PHONY : AntikolSys_Rollstuhl_Curtis-upload
-
-# clean rule for target.
-CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean:
-	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
-.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir
 
 # All Build rule for target.
@@ -284,7 +407,7 @@ CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/all: CMakeFiles/AntikolSys_Rolls
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 47
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/rule
@@ -300,6 +423,33 @@ CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/clean:
 .PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir
+
+# All Build rule for target.
+CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all: CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all
+	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/depend
+	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num= "Built target AntikolSys_Rollstuhl_Curtis-upload"
+.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 46
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule
+
+# Convenience name for target.
+AntikolSys_Rollstuhl_Curtis-upload: CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/rule
+
+.PHONY : AntikolSys_Rollstuhl_Curtis-upload
+
+# clean rule for target.
+CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean:
+	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
+.PHONY : CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/upload.dir
 
 # All Build rule for target.
@@ -311,7 +461,7 @@ CMakeFiles/upload.dir/all: CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 46
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/upload.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/upload.dir/rule

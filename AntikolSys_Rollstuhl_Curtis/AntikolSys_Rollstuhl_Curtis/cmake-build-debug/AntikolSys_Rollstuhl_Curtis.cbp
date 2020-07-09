@@ -17,6 +17,96 @@
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="mega_global">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_global.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_global"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_global/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_global.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_global/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="mega_CORE">
 				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_CORE.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
@@ -33,6 +123,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -63,6 +168,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -72,6 +192,96 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_CORE/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515_defs">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_mcp2515_defs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515_defs"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515_defs/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_mcp2515_defs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515_defs/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -93,6 +303,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -123,6 +348,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -132,126 +372,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_RPLidar/fast"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mega_PID_v1">
-				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mega_PID_v1/fast">
-				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1/fast"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mega_rplidar_cmd">
-				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_rplidar_cmd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_rplidar_cmd"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="mega_rplidar_cmd/fast">
-				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_rplidar_cmd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
-					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
-					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_rplidar_cmd/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -273,6 +393,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -303,6 +438,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -312,6 +462,456 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_rptypes/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_mcp2515.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_mcp2515/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_mcp2515.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_mcp2515/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_rplidar_cmd">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_rplidar_cmd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_rplidar_cmd"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_rplidar_cmd/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_rplidar_cmd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_rplidar_cmd/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_Canbus">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_Canbus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_Canbus"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_Canbus/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_Canbus.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_Canbus/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_defaults">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_defaults.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_defaults"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_defaults/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_defaults.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_defaults/fast"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mega_PID_v1/fast">
+				<Option output="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/libmega_PID_v1.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rptypes/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="c:\program files (x86)\arduino\hardware\tools\avr\bin\../lib/gcc/avr/7.3.0/../../../../avr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 mega_PID_v1/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -333,6 +933,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -363,6 +978,21 @@
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/RPLidar/rplidar_cmd/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/global/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/utility"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/src"/>
+					<Add directory="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults/utility"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/src"/>
 					<Add directory="C:/Program Files (x86)/Arduino/libraries/PID_v1/utility"/>
@@ -377,21 +1007,21 @@
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="AntikolSys_Rollstuhl_Curtis-upload">
-				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntikolSys_Rollstuhl_Curtis-upload"/>
-					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="AntikolSys_Rollstuhl_Curtis-size">
 				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntikolSys_Rollstuhl_Curtis-size"/>
+					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AntikolSys_Rollstuhl_Curtis-upload">
+				<Option working_dir="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 AntikolSys_Rollstuhl_Curtis-upload"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -557,6 +1187,22 @@
 		<Unit filename="C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c">
 			<Option target="mega_CORE"/>
 		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.cpp">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/Canbus.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/defaults.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/Canbus/global.h">
+			<Option target="mega_Canbus"/>
+			<Option target="mega_defaults"/>
+		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/PID_v1/PID_v1.cpp">
 			<Option target="mega_PID_v1"/>
 		</Unit>
@@ -565,13 +1211,33 @@
 		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.cpp">
 			<Option target="mega_RPLidar"/>
-			<Option target="mega_rplidar_cmd"/>
 			<Option target="mega_rptypes"/>
+			<Option target="mega_rplidar_cmd"/>
 		</Unit>
 		<Unit filename="C:/Program Files (x86)/Arduino/libraries/RPLidar/RPLidar.h">
 			<Option target="mega_RPLidar"/>
-			<Option target="mega_rplidar_cmd"/>
 			<Option target="mega_rptypes"/>
+			<Option target="mega_rplidar_cmd"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/global.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515_defs"/>
+			<Option target="mega_mcp2515"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.c">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515_defs"/>
+			<Option target="mega_mcp2515"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515_defs"/>
+			<Option target="mega_mcp2515"/>
+		</Unit>
+		<Unit filename="C:/Program Files (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h">
+			<Option target="mega_global"/>
+			<Option target="mega_mcp2515_defs"/>
+			<Option target="mega_mcp2515"/>
 		</Unit>
 		<Unit filename="C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino">
 			<Option target="AntikolSys_Rollstuhl_Curtis"/>

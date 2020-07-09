@@ -9,6 +9,12 @@
 C:/Users/cyril/CLionProjects/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp
 RPLidar/RPLidar.h
 -
+mcp2515/mcp2515_defs.h
+-
+mcp2515/mcp2515.h
+-
+Canbus/Canbus.h
+-
 PID_v1/PID_v1.h
 -
 Arduino.h

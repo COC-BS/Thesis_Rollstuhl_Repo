@@ -30,22 +30,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_CORE.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_CORE.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_PID_v1.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_PID_v1.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_RPLidar.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_RPLidar.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_rplidar_cmd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_rplidar_cmd.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_rptypes.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_rptypes.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_CAN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_CAN/Test_CAN.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/Test_CAN.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_CORE.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_CORE.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_Canbus.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_Canbus.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_defaults.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_defaults.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_global.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_global.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_mcp2515.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_mcp2515.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_mcp2515_defs.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/cmake-build-debug/libmega_mcp2515_defs.a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +146,7 @@
       <workItem from="1593589803573" duration="4535000" />
       <workItem from="1593671457086" duration="16469000" />
       <workItem from="1594037649577" duration="4223000" />
-      <workItem from="1594106566886" duration="4911000" />
+      <workItem from="1594106566886" duration="6424000" />
     </task>
     <servers />
   </component>

@@ -15,4 +15,9 @@ CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\AntikolSys_Rollstuhl_Curtis_AntikolSy
  C:/Program\ Files\ (x86)/Arduino/libraries/RPLidar/inc/rptypes.h \
  C:/Program\ Files\ (x86)/Arduino/libraries/RPLidar/inc/rplidar_cmd.h \
  C:\PROGRA~2\Arduino\LIBRAR~1\RPLidar/inc/rplidar_protocol.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/mcp2515.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/mcp2515_defs.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/mcp2515/global.h \
+ C:/Program\ Files\ (x86)/Arduino/libraries/Canbus/Canbus.h \
  C:/Program\ Files\ (x86)/Arduino/libraries/PID_v1/PID_v1.h

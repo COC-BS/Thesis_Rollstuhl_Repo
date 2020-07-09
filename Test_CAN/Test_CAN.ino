@@ -97,11 +97,6 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     delay(10);
 }
 
-int calcMotorInput (double angle) {
-
-
-}
-
 
 void setup() {
     //CAN-Initialisierung

@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mega_global
+
+# Build rule for target.
+mega_global: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_global
+.PHONY : mega_global
+
+# fast build rule for target.
+mega_global/fast:
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/build
+.PHONY : mega_global/fast
+
+#=============================================================================
 # Target rules for targets named mega_CORE
 
 # Build rule for target.
@@ -121,6 +134,19 @@ mega_CORE: cmake_check_build_system
 mega_CORE/fast:
 	$(MAKE) -f CMakeFiles\mega_CORE.dir\build.make CMakeFiles/mega_CORE.dir/build
 .PHONY : mega_CORE/fast
+
+#=============================================================================
+# Target rules for targets named mega_mcp2515_defs
+
+# Build rule for target.
+mega_mcp2515_defs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_mcp2515_defs
+.PHONY : mega_mcp2515_defs
+
+# fast build rule for target.
+mega_mcp2515_defs/fast:
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/build
+.PHONY : mega_mcp2515_defs/fast
 
 #=============================================================================
 # Target rules for targets named mega_RPLidar
@@ -136,17 +162,30 @@ mega_RPLidar/fast:
 .PHONY : mega_RPLidar/fast
 
 #=============================================================================
-# Target rules for targets named mega_PID_v1
+# Target rules for targets named mega_rptypes
 
 # Build rule for target.
-mega_PID_v1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 mega_PID_v1
-.PHONY : mega_PID_v1
+mega_rptypes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_rptypes
+.PHONY : mega_rptypes
 
 # fast build rule for target.
-mega_PID_v1/fast:
-	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/build
-.PHONY : mega_PID_v1/fast
+mega_rptypes/fast:
+	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/build
+.PHONY : mega_rptypes/fast
+
+#=============================================================================
+# Target rules for targets named mega_mcp2515
+
+# Build rule for target.
+mega_mcp2515: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_mcp2515
+.PHONY : mega_mcp2515
+
+# fast build rule for target.
+mega_mcp2515/fast:
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/build
+.PHONY : mega_mcp2515/fast
 
 #=============================================================================
 # Target rules for targets named mega_rplidar_cmd
@@ -162,17 +201,43 @@ mega_rplidar_cmd/fast:
 .PHONY : mega_rplidar_cmd/fast
 
 #=============================================================================
-# Target rules for targets named mega_rptypes
+# Target rules for targets named mega_Canbus
 
 # Build rule for target.
-mega_rptypes: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 mega_rptypes
-.PHONY : mega_rptypes
+mega_Canbus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_Canbus
+.PHONY : mega_Canbus
 
 # fast build rule for target.
-mega_rptypes/fast:
-	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/build
-.PHONY : mega_rptypes/fast
+mega_Canbus/fast:
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/build
+.PHONY : mega_Canbus/fast
+
+#=============================================================================
+# Target rules for targets named mega_defaults
+
+# Build rule for target.
+mega_defaults: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_defaults
+.PHONY : mega_defaults
+
+# fast build rule for target.
+mega_defaults/fast:
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/build
+.PHONY : mega_defaults/fast
+
+#=============================================================================
+# Target rules for targets named mega_PID_v1
+
+# Build rule for target.
+mega_PID_v1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mega_PID_v1
+.PHONY : mega_PID_v1
+
+# fast build rule for target.
+mega_PID_v1/fast:
+	$(MAKE) -f CMakeFiles\mega_PID_v1.dir\build.make CMakeFiles/mega_PID_v1.dir/build
+.PHONY : mega_PID_v1/fast
 
 #=============================================================================
 # Target rules for targets named AntikolSys_Rollstuhl_Curtis
@@ -188,19 +253,6 @@ AntikolSys_Rollstuhl_Curtis/fast:
 .PHONY : AntikolSys_Rollstuhl_Curtis/fast
 
 #=============================================================================
-# Target rules for targets named AntikolSys_Rollstuhl_Curtis-upload
-
-# Build rule for target.
-AntikolSys_Rollstuhl_Curtis-upload: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 AntikolSys_Rollstuhl_Curtis-upload
-.PHONY : AntikolSys_Rollstuhl_Curtis-upload
-
-# fast build rule for target.
-AntikolSys_Rollstuhl_Curtis-upload/fast:
-	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/build
-.PHONY : AntikolSys_Rollstuhl_Curtis-upload/fast
-
-#=============================================================================
 # Target rules for targets named AntikolSys_Rollstuhl_Curtis-size
 
 # Build rule for target.
@@ -212,6 +264,19 @@ AntikolSys_Rollstuhl_Curtis-size: cmake_check_build_system
 AntikolSys_Rollstuhl_Curtis-size/fast:
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-size.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-size.dir/build
 .PHONY : AntikolSys_Rollstuhl_Curtis-size/fast
+
+#=============================================================================
+# Target rules for targets named AntikolSys_Rollstuhl_Curtis-upload
+
+# Build rule for target.
+AntikolSys_Rollstuhl_Curtis-upload: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 AntikolSys_Rollstuhl_Curtis-upload
+.PHONY : AntikolSys_Rollstuhl_Curtis-upload
+
+# fast build rule for target.
+AntikolSys_Rollstuhl_Curtis-upload/fast:
+	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis-upload.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis-upload.dir/build
+.PHONY : AntikolSys_Rollstuhl_Curtis-upload/fast
 
 #=============================================================================
 # Target rules for targets named upload
@@ -901,6 +966,36 @@ C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c
 	$(MAKE) -f CMakeFiles\mega_CORE.dir\build.make CMakeFiles/mega_CORE.dir/C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c.s
 .PHONY : C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.c.s
 
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.obj: C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.obj
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.obj
+
+# target to build an object file
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.obj:
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.obj
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.obj
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.obj
+
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.i: C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.i
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.i
+
+# target to preprocess a source file
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.i:
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.i
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.i
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.i
+
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.s: C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.s
+
+# target to generate assembly for a file
+C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s:
+	$(MAKE) -f CMakeFiles\mega_Canbus.dir\build.make CMakeFiles/mega_Canbus.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
+	$(MAKE) -f CMakeFiles\mega_defaults.dir\build.make CMakeFiles/mega_defaults.dir/C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.cpp.s
+
 C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj: C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.cpp.obj
 
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj
@@ -935,8 +1030,8 @@ C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.obj: C_/Program_Files_(
 # target to build an object file
 C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj:
 	$(MAKE) -f CMakeFiles\mega_RPLidar.dir\build.make CMakeFiles/mega_RPLidar.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj
 	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.obj
 
 C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.i: C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
@@ -946,8 +1041,8 @@ C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.i: C_/Program_Files_(x8
 # target to preprocess a source file
 C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i:
 	$(MAKE) -f CMakeFiles\mega_RPLidar.dir\build.make CMakeFiles/mega_RPLidar.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
 	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.i
 
 C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.s: C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
@@ -957,9 +1052,42 @@ C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.s: C_/Program_Files_(x8
 # target to generate assembly for a file
 C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s:
 	$(MAKE) -f CMakeFiles\mega_RPLidar.dir\build.make CMakeFiles/mega_RPLidar.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
-	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
 	$(MAKE) -f CMakeFiles\mega_rptypes.dir\build.make CMakeFiles/mega_rptypes.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
+	$(MAKE) -f CMakeFiles\mega_rplidar_cmd.dir\build.make CMakeFiles/mega_rplidar_cmd.dir/C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
 .PHONY : C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.cpp.s
+
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj: C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj
+
+# target to build an object file
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj:
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.obj
+
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.i: C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.i
+
+# target to preprocess a source file
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i:
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.i
+
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.s: C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s
+
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.s
+
+# target to generate assembly for a file
+C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s:
+	$(MAKE) -f CMakeFiles\mega_global.dir\build.make CMakeFiles/mega_global.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s
+	$(MAKE) -f CMakeFiles\mega_mcp2515_defs.dir\build.make CMakeFiles/mega_mcp2515_defs.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s
+	$(MAKE) -f CMakeFiles\mega_mcp2515.dir\build.make CMakeFiles/mega_mcp2515.dir/C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s
+.PHONY : C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.c.s
 
 # Help Target
 help:
@@ -967,14 +1095,19 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... mega_global
 	@echo ... mega_CORE
+	@echo ... mega_mcp2515_defs
 	@echo ... mega_RPLidar
-	@echo ... mega_PID_v1
-	@echo ... mega_rplidar_cmd
 	@echo ... mega_rptypes
+	@echo ... mega_mcp2515
+	@echo ... mega_rplidar_cmd
+	@echo ... mega_Canbus
+	@echo ... mega_defaults
+	@echo ... mega_PID_v1
 	@echo ... AntikolSys_Rollstuhl_Curtis
-	@echo ... AntikolSys_Rollstuhl_Curtis-upload
 	@echo ... AntikolSys_Rollstuhl_Curtis-size
+	@echo ... AntikolSys_Rollstuhl_Curtis-upload
 	@echo ... upload
 	@echo ... edit_cache
 	@echo ... rebuild_cache
@@ -1053,12 +1186,18 @@ help:
 	@echo ... C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.obj
 	@echo ... C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.i
 	@echo ... C_/Program_Files_(x86)/Arduino/hardware/arduino/avr/cores/arduino/wiring_shift.s
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.obj
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.i
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/Canbus/Canbus.s
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.obj
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.i
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/PID_v1/PID_v1.s
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.obj
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.i
 	@echo ... C_/Program_Files_(x86)/Arduino/libraries/RPLidar/RPLidar.s
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.obj
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.i
+	@echo ... C_/Program_Files_(x86)/Arduino/libraries/mcp2515/mcp2515.s
 .PHONY : help
 
 
