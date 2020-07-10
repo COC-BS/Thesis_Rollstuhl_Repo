@@ -38,15 +38,21 @@ Distributed as-is; no warranty is given.
 #line 21 "C:/Users/cyril/CLionProjects/Test_CAN/Test_CAN.ino"
 
 
-double calcAngle = 90;
+double calcAngle =0;
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
-double Setpoint; //Soll-Winkel
-double Input; //Differenz zwischen soll und ist winkel
-double Output; //IST-Winkel, für Motorenansteuerung nutzen
+double turnSetpoint; //Soll-Winkel
+double turnInput; //Differenz zwischen soll und ist winkel
+double turnOutput; //IST-Winkel, für Motorenansteuerung nutzen
 //PID-Parameter
 double Kp=20, Ki=10, Kd=10;
 //PID Instanz erstellen
-PID motorPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
+PID motorPID(&turnInput, &turnOutput, &turnSetpoint, Kp, Ki, Kd, DIRECT);
+
+double dist = 0;
+double distSetpoint = 1;
+double distInput;
+double distOutput;
+PID distPID(&distInput, &distOutput, &distSetpoint, Kp, Ki, Kd, DIRECT);
 
 int currMillis = 0;
 int oldMillis = -1;
@@ -92,6 +98,9 @@ void readCAN (tCAN message) {
                 float angleRad = (vr-vl) / (2 * 0.26) * (currMillis - oldMillis) / 1000;
                 //Winkel in Grad
                 turnedAngle += angleRad * 180 / PI;
+
+                dist += (vr + vl) / 2 *(currMillis - oldMillis) / 1000;
+
             }
 
             oldMillis = millis();
@@ -133,10 +142,13 @@ void setup() {
 
 
     //PID-Initialisierung
-    Setpoint = calcAngle;
-    Output = 0;
+    turnSetpoint = calcAngle;
+    turnOutput = 0;
     motorPID.SetMode(AUTOMATIC); //Turn PID on
     motorPID.SetTunings(Kp,Ki,Kd); //Adjust PID values
+
+    distPID.SetMode(AUTOMATIC);
+    distPID.SetTunings(Kp,Ki,Kd);
 }
 
 
@@ -151,14 +163,17 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
     //writeCAN(message,forwardSpeed,turnRate);
 
     //=========PID-Verarbeitung===============
-    Setpoint = calcAngle;
-    Input = turnedAngle;
-
+    turnSetpoint = calcAngle;
+    turnInput = turnedAngle;
     motorPID.Compute(); //PID berechnung
 
-    Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
 
-    writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+    distInput = dist;
+    distPID.Compute(); //PID berechnung
+
+    Serial.println( "Distanz:  "+ String(dist)+"  |  Output PID: " + String(turnOutput) + "  Turned Angle: " + String(turnedAngle));
+
+    writeCAN(message,distOutput,(turnOutput*-1)); //Gibt Motorensteuerung anhand Output PID
 
     //Motoren ansteuern
 
