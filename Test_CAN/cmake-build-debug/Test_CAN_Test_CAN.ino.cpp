@@ -30,8 +30,6 @@ Distributed as-is; no warranty is given.
  void readCAN (tCAN message) ;
  void writeCAN (tCAN message, int forwardSpeed, int turnRate) ;
  void writeCAN (tCAN message, int forwardSpeed, int turnRate) ;
- int calcMotorInput (double angle) ;
- int calcMotorInput (double angle) ;
  void setup() ;
  void setup() ;
  void loop()  ;
@@ -115,11 +113,6 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     mcp2515_send_message(&message);
 
     delay(10);
-}
-
-int calcMotorInput (double angle) {
-
-
 }
 
 

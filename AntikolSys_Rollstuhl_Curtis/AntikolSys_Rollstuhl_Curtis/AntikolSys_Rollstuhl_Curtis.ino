@@ -400,7 +400,7 @@ void loop() {
             break;
     }
 
-    
+
     //Versatz des Sensors vom Mittelpunkt, Variable Sensor Offset!
 
 
