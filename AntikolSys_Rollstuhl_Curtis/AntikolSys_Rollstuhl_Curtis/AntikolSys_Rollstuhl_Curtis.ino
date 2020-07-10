@@ -38,8 +38,9 @@ int edgeThreshhold = -50;
 
 float phi;
 
-int status = 0;
-boolean scanFlag = true;
+int status = -1;
+
+const byte interruptPin = 2;
 
 #define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
@@ -109,6 +110,11 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     delay(10);
 }
 
+void motorCommandApproach () {
+
+    status = -1;
+}
+
 void motorCommandRotation(float phi) {
     tCAN message;
     //Read Encoder Motor and calculate turned angle
@@ -117,12 +123,15 @@ void motorCommandRotation(float phi) {
     Input = turnedAngle;
     motorPID.Compute();
 
-    Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
+    //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
     writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
     float angleAbs = (abs(phi) - abs(turnedAngle));
-    if (angleAbs < 0.05 && angleAbs > -0.05)
-        status = 0;
+    if (angleAbs < 0.05 && angleAbs > -0.05) {
+        status = 3;
+        Serial.println("Turned on Point!      Turned Angle: " + String(turnedAngle));
+        Serial.println("#==============================================");
+    }
 }
 
 
@@ -172,7 +181,7 @@ void calcDriveAngle () {
 
     Serial.print("Winkel Phi: ");
     Serial.println(phi);
-    Serial.println("#============================================");
+    Serial.println("#==============================================");
 
     status = 2;
 }
@@ -265,11 +274,11 @@ void detectDoor (int edgeThreshold) {
     if (doorIndex == 2)
         status = 1;
     else if (doorIndex == 0 || doorIndex > 2)
-        status = 0;
+        status = 4;
 }
 
 void scanLidar () {
-    if (millis() < 5000) {
+    for (int i = 0; i < 400; ++i) {
         if (IS_OK(lidar.waitPoint())) {
             float distance = lidar.getCurrentPoint().distance; //distance value in cm unit
             float angle = lidar.getCurrentPoint().angle; //anglue value in degree
@@ -303,8 +312,7 @@ void scanLidar () {
     }
 
     //Print points-Buffer to the Serial
-    else if (scanFlag == true) {
-        /*
+    /*
         for (int i = 0; i < 90; ++i) {
             Serial.print(points[i].angle);
             Serial.print(" ");
@@ -312,15 +320,29 @@ void scanLidar () {
             Serial.print(" ");
             Serial.println(points[i].quality);
         }
-         */
+    */
 
-        //Detect Door
-        detectDoor(edgeThreshhold);
-        scanFlag = false;
-        analogWrite(RPLIDAR_MOTOR, 0);
-    }
+    //Detect Door
+    analogWrite(RPLIDAR_MOTOR, 0);
+    detectDoor(edgeThreshhold);
 
+}
 
+void resetSystem () {
+    points[90] = {};
+    edgePoints[50] = {};
+    doorPoints[6] = {};
+    edgeIndex = 0;
+    doorIndex = 0;
+
+    status = -1;
+}
+
+void btChange() {
+    if (status == -1)
+        status = 0;
+    else
+        status = -1;
 }
 
 void setup() {
@@ -331,6 +353,10 @@ void setup() {
     // set pin modes
     pinMode(RPLIDAR_MOTOR, OUTPUT);
     pinMode(CANEn,OUTPUT);
+    pinMode(interruptPin, INPUT_PULLUP);
+
+    attachInterrupt(digitalPinToInterrupt(interruptPin), btChange, CHANGE);
+
     digitalWrite(CANEn,HIGH);
     delay(10);
     Serial.println("CAN Write - Testing transmission of CAN Bus messages");
@@ -352,18 +378,29 @@ void setup() {
 void loop() {
     //Scan for Points with the LIDAR and search a Door
     switch (status) {
-        case 0: scanLidar();
+        case 0:
+            Serial.println("LIDAR-Scan");
+            scanLidar();
             break;
-        case 1: calcDriveAngle();
+        case 1:
+            Serial.println("Calculate Angle");
+            calcDriveAngle();
             break;
         case 2:
+            //Serial.println("Motor Commands");
             motorCommandRotation(phi);
             break;
-
+        case 3:
+            Serial.println("Pass Door");
+            motorCommandApproach();
+        case 4:
+            Serial.println("Error, Reset System");
+            resetSystem();
+        default:
+            break;
     }
 
-
-    //Flag wenn mehrere Türen gefunden werden und Error!!
+    
     //Versatz des Sensors vom Mittelpunkt, Variable Sensor Offset!
 
 
