@@ -28,6 +28,7 @@ Points points[90];
 Points edgePoints[50];
 Points doorPoints[6];
 int edgeIndex = 0;
+int doorIndex = 0;
 
 float angleReadMin = 135;
 float angleReadMax = 225;
@@ -127,7 +128,7 @@ void motorCommandApproach (float distance) {
     tCAN message;
     //Read Encoder Motor and calculate turned angle
     readCAN(message);
-    distSetpoint = (distance-90)/100;
+    distSetpoint = (distance)/100;
     distInput = droveDist;
     distPID.Compute();
 
@@ -237,11 +238,55 @@ void driveCommandDirect () {
 
     status = 2;
 }
-               
 
+void wheelchairGeomtryCorrection() {
+
+        doorPoints[0].x -= 37;
+        doorPoints[0].y += 26;
+
+        doorPoints[1].x -= 37;
+        doorPoints[1].y += 26;
+
+        float angleRad;
+        doorPoints[0].dist = sqrtf(pow( doorPoints[0].x,2)+pow( doorPoints[0].y,2));
+        if (doorPoints[0].y < 0)
+        angleRad = atanf(doorPoints[0].y/doorPoints[0].x)+PI;
+        else
+        angleRad = atan2f(doorPoints[0].y,doorPoints[0].x);
+        doorPoints[0].angle = angleRad * 180 / PI;
+
+        doorPoints[1].dist = sqrtf(pow( doorPoints[1].x,2)+pow( doorPoints[1].y,2));
+        if (doorPoints[1].y < 0)
+        angleRad = atanf(doorPoints[1].y/doorPoints[1].x)+PI;
+        else
+        angleRad = atan2f(doorPoints[1].y,doorPoints[1].x);
+        doorPoints[1].angle = angleRad * 180 / PI;
+
+    Serial.println("#======= CorrectedDoor Points ========");
+
+            Serial.print("x: ");
+            Serial.print(doorPoints[0].x);
+            Serial.print("  y: ");
+            Serial.print(doorPoints[0].y);
+            Serial.print("  dist: ");
+            Serial.print(doorPoints[0].dist);
+            Serial.print("  angle: ");
+            Serial.println(doorPoints[0].angle);
+
+    Serial.print("x: ");
+    Serial.print(doorPoints[1].x);
+    Serial.print("  y: ");
+    Serial.print(doorPoints[1].y);
+    Serial.print("  dist: ");
+    Serial.print(doorPoints[1].dist);
+    Serial.print("  angle: ");
+    Serial.println(doorPoints[1].angle);
+
+
+}
 
 void detectDoor (int edgeThreshold) {
-    int doorIndex = 0;
+    doorIndex = 0;
     double mask [] = {-1, 2, -1};
     for (int i = 1; i < 90; ++i) {
         int edgeValue = points[i-1].dist * mask[0] + points[i].dist * mask[1] +
@@ -313,24 +358,24 @@ void detectDoor (int edgeThreshold) {
     //Print Door Points
     for (int j = 0; j < doorIndex; ++j) {
 
-        if (showPoints) {
-            Serial.print(doorPoints[j].angle);
-            Serial.print(" ");
+        //if (showPoints) {
+            Serial.print("x: ");
+            Serial.print(doorPoints[j].x);
+            Serial.print("  y: ");
+            Serial.print(doorPoints[j].y);
+            Serial.print("  dist: ");
             Serial.print(doorPoints[j].dist);
-            Serial.print(" ");
-            Serial.println(doorPoints[j].quality);
-        }
+            Serial.print("  angle: ");
+            Serial.println(doorPoints[j].angle);
+        //}
 
-        Serial.print("  x: ");
-        Serial.print(doorPoints[j].x);
-        Serial.print("  y: ");
-        Serial.println(doorPoints[j].y);
-    }
+        }
 
     Serial.print("DoorIndex:  ");
     Serial.println(String(doorIndex));
 
     if (doorIndex == 2)
+
         status = 1;
     else if (doorIndex == 0 || doorIndex > 2)
         status = 4;
@@ -448,7 +493,8 @@ void loop() {
             scanLidar();
             break;
         case 1:
-            Serial.println("Calculate Angle");
+            wheelchairGeomtryCorrection();
+            //Serial.println("Calculate Angle");
             //calcDriveAngle();
             driveCommandDirect();
             break;

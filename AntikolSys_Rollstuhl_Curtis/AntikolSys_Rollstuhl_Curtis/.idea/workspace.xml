@@ -26,17 +26,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_CORE.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_CORE.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_Canbus.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_Canbus.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_PID_v1.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_PID_v1.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_RPLidar.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_RPLidar.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_defaults.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_defaults.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_global.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_global.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_mcp2515.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_mcp2515.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_mcp2515_defs.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_mcp2515_defs.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_rplidar_cmd.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_rplidar_cmd.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libmega_rptypes.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libmega_rptypes.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Test_CAN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Test_CAN/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +142,7 @@
       <workItem from="1594830698486" duration="2517000" />
       <workItem from="1595230850105" duration="6132000" />
       <workItem from="1595486032304" duration="7949000" />
-      <workItem from="1595495306001" duration="1653000" />
+      <workItem from="1595495306001" duration="10228000" />
     </task>
     <servers />
   </component>
@@ -224,6 +213,10 @@
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595495323962" />
     <state x="1138" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1594799651884" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595513847649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595513847649" />
     <state x="510" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593679229654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
