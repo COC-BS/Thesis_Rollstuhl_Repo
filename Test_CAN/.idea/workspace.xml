@@ -5,12 +5,12 @@
       <config projectName="Test_CAN" targetName="upload" />
       <config projectName="Test_CAN" targetName="mega_CORE" />
       <config projectName="Test_CAN" targetName="mega_mcp2515_defs" />
-      <config projectName="Test_CAN" targetName="mega_Canbus" />
+      <config projectName="Test_CAN" targetName="Test_CAN" />
       <config projectName="Test_CAN" targetName="Test_CAN-size" />
       <config projectName="Test_CAN" targetName="mega_global" />
       <config projectName="Test_CAN" targetName="Test_CAN-upload" />
       <config projectName="Test_CAN" targetName="mega_mcp2515" />
-      <config projectName="Test_CAN" targetName="Test_CAN" />
+      <config projectName="Test_CAN" targetName="mega_Canbus" />
       <config projectName="Test_CAN" targetName="mega_defaults" />
     </generated>
   </component>
@@ -23,18 +23,7 @@
     <list default="true" id="8e5608ad-b116-4085-8abf-324623f271c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_CAN.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Test_CAN.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +157,7 @@
       <workItem from="1594828288105" duration="1867000" />
       <workItem from="1595230642562" duration="2101000" />
       <workItem from="1595486001459" duration="29000" />
+      <workItem from="1595489978584" duration="1071000" />
     </task>
     <servers />
   </component>

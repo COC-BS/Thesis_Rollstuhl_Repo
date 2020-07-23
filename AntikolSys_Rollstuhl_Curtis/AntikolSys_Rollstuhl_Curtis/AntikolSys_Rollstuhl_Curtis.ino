@@ -28,7 +28,6 @@ Points points[90];
 Points edgePoints[50];
 Points doorPoints[6];
 int edgeIndex = 0;
-int doorIndex = 0;
 
 float angleReadMin = 135;
 float angleReadMax = 225;
@@ -36,9 +35,10 @@ float angleReadMax = 225;
 int sensorOffsetX = 40;
 int sensorOffsetY = 20;
 
-int edgeThreshhold = -20;
+int edgeThreshhold = -10;
 
 float phi;
+float dist;
 
 int status = -1;
 
@@ -47,7 +47,7 @@ const byte interruptPin = 2;
 #define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
 
-//PID Variabeln
+//PID Variabeln Drehen
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
 double Setpoint; //Soll-Winkel
 double Input; //Differenz zwischen soll und ist winkel
@@ -56,6 +56,15 @@ double Output; //IST-Winkel, für Motorenansteuerung nutzen
 double Kp=30, Ki=10, Kd=10;
 //PID Instanz erstellen
 PID motorPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
+
+
+//PID Variabeln Distanz
+double distSetpoint;
+double KpD=20, KiD=1, KdD=0;
+double droveDist = 0;
+double distInput;
+double distOutput;
+PID distPID(&distInput, &distOutput, &distSetpoint, KpD, KiD, KdD, DIRECT);
 
 int currMillis;
 int oldMillis = -1;
@@ -89,6 +98,8 @@ void readCAN (tCAN message) {
                 float angleRad = (vr-vl) / (2 * 0.26) * (currMillis - oldMillis) / 1000;
                 //Winkel in Grad
                 turnedAngle += angleRad * 180 / PI;
+
+                droveDist += (vr + vl) / 2 *(currMillis - oldMillis) / 1000;
             }
 
             oldMillis = millis();
@@ -112,9 +123,28 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     delay(10);
 }
 
-void motorCommandApproach () {
+void motorCommandApproach (float distance) {
+    tCAN message;
+    //Read Encoder Motor and calculate turned angle
+    readCAN(message);
+    distSetpoint = (distance-90)/100;
+    distInput = droveDist;
+    distPID.Compute();
 
-    status = -1;
+    Setpoint = 0;
+    Input = turnedAngle;
+    motorPID.Compute();
+
+    Serial.println("Dist Setpoint: " + String(distSetpoint) + "  Output PID: " + String(distOutput) + "  Drove Dist: " + String(droveDist));
+    writeCAN(message,distOutput,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+
+    float distAbs = (abs(distance) - abs(droveDist));
+
+    if (distAbs < 0.1 && distAbs > -0.1) {
+        status = 5;
+        Serial.println("Drove forward!      Drove Dist: " + String(droveDist));
+        Serial.println("#==============================================");
+    }
 }
 
 void motorCommandRotation(float phi) {
@@ -125,22 +155,17 @@ void motorCommandRotation(float phi) {
     Input = turnedAngle;
     motorPID.Compute();
 
-    Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
+    //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
     writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
     float angleAbs = (abs(phi) - abs(turnedAngle));
     if (angleAbs < 0.05 && angleAbs > -0.05) {
-        //status = 3;
-        status = 5;
+        status = 3;
         Serial.println("Turned on Point!      Turned Angle: " + String(turnedAngle));
         Serial.println("#==============================================");
+        turnedAngle = 0;
     }
 }
-
-void motorCommandForward(float dist) {
-
-}
-
 
 void calcDriveAngle () {
     //Joystick Addresse: 0x081; Byte 0 = Direction; Byte 1 = Speed
@@ -201,8 +226,7 @@ void driveCommandDirect () {
     middleDoor.y = (doorPoints[0].y + doorPoints[1].y) / 2;
 
     phi = middleDoor.angle - 180;
-
-    //motorCommandRotation(middleDoor.angle);
+    dist = middleDoor.dist;
 
     Serial.println("#============= Drive Control Points ============");
     Serial.print("Winkel Phi: ");
@@ -217,6 +241,7 @@ void driveCommandDirect () {
 
 
 void detectDoor (int edgeThreshold) {
+    int doorIndex = 0;
     double mask [] = {-1, 2, -1};
     for (int i = 1; i < 90; ++i) {
         int edgeValue = points[i-1].dist * mask[0] + points[i].dist * mask[1] +
@@ -302,6 +327,9 @@ void detectDoor (int edgeThreshold) {
         Serial.println(doorPoints[j].y);
     }
 
+    Serial.print("DoorIndex:  ");
+    Serial.println(String(doorIndex));
+
     if (doorIndex == 2)
         status = 1;
     else if (doorIndex == 0 || doorIndex > 2)
@@ -365,7 +393,6 @@ void resetSystem () {
     edgePoints[50] = {};
     doorPoints[6] = {};
     edgeIndex = 0;
-    doorIndex = 0;
 
     status = -1;
 }
@@ -404,6 +431,9 @@ void setup() {
     //PID-Initialisierung
     motorPID.SetMode(AUTOMATIC); //Turn PID on
     motorPID.SetTunings(Kp,Ki,Kd); //Adjust PID values
+
+    distPID.SetMode(AUTOMATIC);
+    distPID.SetTunings(KpD,KiD,KdD);
 }
 
 
@@ -427,13 +457,15 @@ void loop() {
             motorCommandRotation(phi);
             break;
         case 3:
-            Serial.println("Pass Door");
-            motorCommandApproach();
+            motorCommandApproach(dist);
+            break;
         case 4:
             Serial.println("Error, Reset System");
             resetSystem();
+            break;
         case 5:
             resetSystem();
+            break;
         default:
             break;
     }
