@@ -19,8 +19,11 @@ Distributed as-is; no warranty is given.
 
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
 
-//PID Variabeln
+//Setpoints für PID-Regelung
 double calcAngle = 0;
+double distSetpoint = 1;
+
+//PID Variabeln
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
 double turnSetpoint; //Soll-Winkel
 double turnInput; //Differenz zwischen soll und ist winkel
@@ -30,11 +33,11 @@ double Kp=20, Ki=10, Kd=10;
 //PID Instanz erstellen
 PID motorPID(&turnInput, &turnOutput, &turnSetpoint, Kp, Ki, Kd, DIRECT);
 
+double KpD=100, KiD=0, KdD=0;
 double dist = 0;
-double distSetpoint = 1;
 double distInput;
 double distOutput;
-PID distPID(&distInput, &distOutput, &distSetpoint, Kp, Ki, Kd, DIRECT);
+PID distPID(&distInput, &distOutput, &distSetpoint, KpD, KiD, KdD, DIRECT);
 
 int currMillis = 0;
 int oldMillis = -1;
@@ -130,7 +133,7 @@ void setup() {
     motorPID.SetTunings(Kp,Ki,Kd); //Adjust PID values
 
     distPID.SetMode(AUTOMATIC);
-    distPID.SetTunings(Kp,Ki,Kd);
+    distPID.SetTunings(KpD,KiD,KdD);
 }
 
 
@@ -153,10 +156,9 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
     distInput = dist;
     distPID.Compute(); //PID berechnung
 
-    Serial.println( "Distanz:  "+ String(dist)+"  |  Output PID: " + String(turnOutput) + "  Turned Angle: " + String(turnedAngle));
+    Serial.println( "Distanz:  "+ String(dist)+" Turned Angle: " + String(turnedAngle) + "  |  Output PIDDist: " + String(distOutput) +  "  Output PIDTurn: " + String(turnOutput));
 
     writeCAN(message,distOutput,(turnOutput*-1)); //Gibt Motorensteuerung anhand Output PID
 
-    //Motoren ansteuern
 
 }

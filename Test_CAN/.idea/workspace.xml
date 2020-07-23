@@ -22,9 +22,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8e5608ad-b116-4085-8abf-324623f271c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_CAN.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Test_CAN.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Test_CAN.dir/Test_CAN_Test_CAN.ino.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Test_CAN_Test_CAN.ino.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AntikolSys_Rollstuhl_Curtis/AntikolSys_Rollstuhl_Curtis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="CMake Application.Test_CAN">
     <configuration name="Test_CAN-size" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Test_CAN" TARGET_NAME="Test_CAN-size" CONFIG_NAME="Debug">
@@ -154,7 +163,11 @@
       <workItem from="1593594889708" duration="1533000" />
       <workItem from="1593671457050" duration="1420000" />
       <workItem from="1594107238266" duration="28080000" />
-      <workItem from="1594362018129" duration="5086000" />
+      <workItem from="1594362018129" duration="7626000" />
+      <workItem from="1594794043913" duration="4896000" />
+      <workItem from="1594828288105" duration="1867000" />
+      <workItem from="1595230642562" duration="2101000" />
+      <workItem from="1595486001459" duration="29000" />
     </task>
     <servers />
   </component>
@@ -163,12 +176,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="291" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589361510093" />
-    <state x="680" y="256" key="FileChooserDialogImpl" timestamp="1594362547638">
+    <state x="680" y="256" key="FileChooserDialogImpl" timestamp="1595486024514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="680" y="256" key="FileChooserDialogImpl/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1592205990927" />
-    <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1589356391198" />
-    <state x="680" y="256" key="FileChooserDialogImpl/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1594362547638" />
+    <state x="680" y="256" key="FileChooserDialogImpl/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595486024514" />
+    <state x="533" y="237" key="FileChooserDialogImpl/0.0.1504.963@0.0.1504.963" timestamp="1594830692162" />
+    <state x="680" y="256" key="FileChooserDialogImpl/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595230654264" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1594371567236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,12 +230,12 @@
     <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@-2256.0.1504.976" timestamp="1589377981945" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1589373804405" />
     <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1594371567236" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1594362176473">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1595486018473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1592201913332" />
-    <state x="514" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1589478255117" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1594362176473" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595486018473" />
+    <state x="514" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1594830680841" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1595230646448" />
     <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589373738792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

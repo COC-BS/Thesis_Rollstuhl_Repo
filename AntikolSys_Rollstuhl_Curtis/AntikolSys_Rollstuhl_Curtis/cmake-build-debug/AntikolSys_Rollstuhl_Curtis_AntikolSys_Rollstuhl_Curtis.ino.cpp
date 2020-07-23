@@ -24,6 +24,8 @@
  void motorCommandRotation(float phi) ;
  void calcDriveAngle () ;
  void calcDriveAngle () ;
+ void driveCommandDirect () ;
+ void driveCommandDirect () ;
  void detectDoor (int edgeThreshold) ;
  void detectDoor (int edgeThreshold) ;
  void scanLidar () ;
@@ -41,6 +43,8 @@
 
 
 RPLidar lidar;
+
+bool showPoints = false;
 
 struct Vector {
     float x;
@@ -66,7 +70,7 @@ float angleReadMax = 225;
 int sensorOffsetX = 40;
 int sensorOffsetY = 20;
 
-int edgeThreshhold = -50;
+int edgeThreshhold = -20;
 
 float phi;
 
@@ -155,12 +159,13 @@ void motorCommandRotation(float phi) {
     Input = turnedAngle;
     motorPID.Compute();
 
-    //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
+    Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
     writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
     float angleAbs = (abs(phi) - abs(turnedAngle));
     if (angleAbs < 0.05 && angleAbs > -0.05) {
-        status = 3;
+        //status = 3;
+        status = 5;
         Serial.println("Turned on Point!      Turned Angle: " + String(turnedAngle));
         Serial.println("#==============================================");
     }
@@ -217,6 +222,27 @@ void calcDriveAngle () {
 
     status = 2;
 }
+
+void driveCommandDirect () {
+    Points middleDoor;
+    middleDoor.dist = (doorPoints[0].dist + doorPoints[1].dist) / 2;
+    middleDoor.angle = (doorPoints[0].angle + doorPoints[1].angle) / 2;
+    middleDoor.x = (doorPoints[0].y + doorPoints[1].x) / 2;
+    middleDoor.y = (doorPoints[0].y + doorPoints[1].y) / 2;
+
+    phi = middleDoor.angle - 180;
+
+    //motorCommandRotation(middleDoor.angle);
+
+    Serial.println("#============= Drive Control Points ============");
+    Serial.print("Winkel Phi: ");
+    Serial.println(phi);
+    Serial.print("Distanz: ");
+    Serial.println(middleDoor.dist);
+    Serial.println("#==============================================");
+
+    status = 2;
+}
                
 
 
@@ -231,16 +257,17 @@ void detectDoor (int edgeThreshold) {
         }
     }
 
-    /*
-    Serial.println("#========== Edge Points ===========");
-    for (int j = 0; j < edgeIndex; ++j) {
+    if (showPoints) {
+        Serial.println("#========== Edge Points ===========");
+        for (int j = 0; j < edgeIndex; ++j) {
             Serial.print(edgePoints[j].angle);
             Serial.print(" ");
             Serial.print(edgePoints[j].dist);
             Serial.print(" ");
             Serial.println(edgePoints[j].quality);
+        }
     }
-    */
+
 
 
     boolean door = false;
@@ -290,13 +317,15 @@ void detectDoor (int edgeThreshold) {
 
     //Print Door Points
     for (int j = 0; j < doorIndex; ++j) {
-        /*
-        Serial.print(doorPoints[j].angle);
-        Serial.print(" ");
-        Serial.print(doorPoints[j].dist);
-        Serial.print(" ");
-        Serial.print(doorPoints[j].quality);
-        */
+
+        if (showPoints) {
+            Serial.print(doorPoints[j].angle);
+            Serial.print(" ");
+            Serial.print(doorPoints[j].dist);
+            Serial.print(" ");
+            Serial.println(doorPoints[j].quality);
+        }
+
         Serial.print("  x: ");
         Serial.print(doorPoints[j].x);
         Serial.print("  y: ");
@@ -344,7 +373,7 @@ void scanLidar () {
     }
 
     //Print points-Buffer to the Serial
-    /*
+    if (showPoints) {
         for (int i = 0; i < 90; ++i) {
             Serial.print(points[i].angle);
             Serial.print(" ");
@@ -352,7 +381,8 @@ void scanLidar () {
             Serial.print(" ");
             Serial.println(points[i].quality);
         }
-    */
+    }
+
 
     //Detect Door
     analogWrite(RPLIDAR_MOTOR, 0);
@@ -387,7 +417,7 @@ void setup() {
     pinMode(CANEn,OUTPUT);
     pinMode(interruptPin, INPUT_PULLUP);
 
-    attachInterrupt(digitalPinToInterrupt(interruptPin), btChange, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(interruptPin), btChange, RISING);
 
     digitalWrite(CANEn,HIGH);
     delay(10);
@@ -409,6 +439,9 @@ void setup() {
 
 void loop() {
     //Scan for Points with the LIDAR and search a Door
+
+    //Türdetektion als einzelner Case
+
     switch (status) {
         case 0:
             Serial.println("LIDAR-Scan");
@@ -416,7 +449,8 @@ void loop() {
             break;
         case 1:
             Serial.println("Calculate Angle");
-            calcDriveAngle();
+            //calcDriveAngle();
+            driveCommandDirect();
             break;
         case 2:
             //Serial.println("Motor Commands");
@@ -428,13 +462,13 @@ void loop() {
         case 4:
             Serial.println("Error, Reset System");
             resetSystem();
+        case 5:
+            resetSystem();
         default:
             break;
     }
 
 
-
-    //Flag wenn mehrere Türen gefunden werden und Error!!
     //Versatz des Sensors vom Mittelpunkt, Variable Sensor Offset!
 
 

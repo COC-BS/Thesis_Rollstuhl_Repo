@@ -363,16 +363,16 @@ CMakeFiles/mega_PID_v1.dir/clean:
 # Target rules for target CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir
 
 # All Build rule for target.
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_CORE.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515_defs.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rptypes.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_RPLidar.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_defaults.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_Canbus.dir/all
-CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_PID_v1.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rplidar_cmd.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_defaults.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515_defs.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_Canbus.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_CORE.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_PID_v1.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_RPLidar.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_rptypes.dir/all
 CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_global.dir/all
+CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/all: CMakeFiles/mega_mcp2515.dir/all
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/depend
 	$(MAKE) -f CMakeFiles\AntikolSys_Rollstuhl_Curtis.dir\build.make CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\cyril\CLionProjects\AntikolSys_Rollstuhl_Curtis\AntikolSys_Rollstuhl_Curtis\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target AntikolSys_Rollstuhl_Curtis"
