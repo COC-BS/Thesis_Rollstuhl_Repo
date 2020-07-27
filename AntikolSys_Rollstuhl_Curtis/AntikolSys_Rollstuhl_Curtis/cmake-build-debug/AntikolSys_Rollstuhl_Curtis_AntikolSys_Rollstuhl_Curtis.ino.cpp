@@ -36,6 +36,8 @@
  void scanLidar (int nextStatus) ;
  void btChange() ;
  void btChange() ;
+ void led(int ledcolor) ;
+ void led(int ledcolor) ;
  void setup() ;
  void setup() ;
  void loop() ;
@@ -86,6 +88,9 @@ const byte interruptPin = 2;
 
 #define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
+#define LEDRED 8
+#define LEDGREEN 9
+#define LEDBLUE 10
 
 //PID Variabeln Drehen
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
@@ -110,9 +115,38 @@ int currMillis;
 int oldMillis = -1;
 
 void resetSystem (int nextStatus) {
-    points[90] = {};
-    edgePoints[50] = {};
-    doorPoints[6] = {};
+
+    for (int i = 0; i < 90; ++i) {
+        Serial.print(points[i].angle);
+        Serial.print(" ");
+        Serial.print(points[i].dist);
+        Serial.print(" ");
+        Serial.println(points[i].quality);
+    }
+
+    for (int j = 0; j < 90; ++j) {
+        points[j].dist = 0;
+        points[j].angle = 0;
+        points[j]. quality = 0;
+        points[j].x = 0;
+        points[j].y = 0;
+    }
+
+    for (int k = 0; k < 50; ++k) {
+        edgePoints[k].dist = 0;
+        edgePoints[k].angle = 0;
+        edgePoints[k]. quality = 0;
+        edgePoints[k].x = 0;
+        edgePoints[k].y = 0;
+    }
+
+    for (int i = 0; i < 6; ++i) {
+        doorPoints[i].dist = 0;
+        doorPoints[i].angle = 0;
+        doorPoints[i]. quality = 0;
+        doorPoints[i].x = 0;
+        doorPoints[i].y = 0;
+    }
     edgeIndex = 0;
 
     status = nextStatus;
@@ -547,6 +581,26 @@ void btChange() {
         status = -1;
 }
 
+void led(int ledcolor) {
+    switch (ledcolor) {
+        case 0:
+            digitalWrite(LEDGREEN, HIGH);
+            digitalWrite(LEDBLUE, LOW);
+            digitalWrite(LEDRED, LOW);
+            break;
+        case 1:
+            digitalWrite(LEDGREEN, LOW);
+            digitalWrite(LEDBLUE, HIGH);
+            digitalWrite(LEDRED, LOW);
+            break;
+        case 2:
+            digitalWrite(LEDGREEN, LOW);
+            digitalWrite(LEDBLUE, LOW);
+            digitalWrite(LEDRED, HIGH);
+            break;
+    }
+}
+
 void setup() {
     // bind the RPLIDAR driver to the arduino hardware serial
     lidar.begin(Serial3);
@@ -555,6 +609,9 @@ void setup() {
     // set pin modes
     pinMode(RPLIDAR_MOTOR, OUTPUT);
     pinMode(CANEn,OUTPUT);
+    pinMode(LEDRED, OUTPUT);
+    pinMode(LEDBLUE, OUTPUT);
+    pinMode(LEDGREEN, OUTPUT);
     pinMode(interruptPin, INPUT_PULLUP);
 
     attachInterrupt(digitalPinToInterrupt(interruptPin), btChange, RISING);
@@ -590,35 +647,45 @@ void loop() {
     switch (status) {
         case 0:
             Serial.println("LIDAR-Scan");
+            led(1);
             scanLidar(1);
             break;
         case 1:
             //Serial.println("Calculate Angle");
             //calcDriveAngle();
+            led(1);
             driveCommandDirect(2);
             break;
         case 2:
             //Serial.println("Motor Commands");
+            led(1);
             motorCommandRotation(phi,3);
             break;
         case 3:
+            led(1);
             motorCommandApproach(dist,4);
             break;
         case 4:
+            led(1);
             motorCommandRotation(phi2,5);
             break;
         case 5:
+            led(1);
             motorCommandApproach(dist+40,16);
             break;
         case 15:
             Serial.println("Error, Reset System");
             resetSystem(-1);
+            led(2);
+            delay(2000);
             break;
         case 16:
+            led(1);
             Serial.println("Door passed, Reset System");
             resetSystem(-1);
             break;
         default:
+            led(0);
             break;
     }
 
