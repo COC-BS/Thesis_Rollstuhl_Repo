@@ -1,5 +1,3 @@
-
-
 #include <RPLidar/RPLidar.h>
 #include <mcp2515/mcp2515_defs.h>
 #include <mcp2515/mcp2515.h>
@@ -650,9 +648,5 @@ void loop() {
             led(0);
             break;
     }
-
-
-    //Versatz des Sensors vom Mittelpunkt, Variable Sensor Offset!
-
 
 }

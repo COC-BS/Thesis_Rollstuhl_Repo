@@ -197,10 +197,10 @@ CMakeFiles/mega_mcp2515.dir/clean:
 # All Build rule for target.
 CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_global.dir/all
 CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_CORE.dir/all
-CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_mcp2515.dir/all
-CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_Canbus.dir/all
 CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_PID_v1.dir/all
+CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_mcp2515.dir/all
 CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_mcp2515_defs.dir/all
+CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_Canbus.dir/all
 CMakeFiles/Test_CAN.dir/all: CMakeFiles/mega_defaults.dir/all
 	$(MAKE) -f CMakeFiles\Test_CAN.dir\build.make CMakeFiles/Test_CAN.dir/depend
 	$(MAKE) -f CMakeFiles\Test_CAN.dir\build.make CMakeFiles/Test_CAN.dir/build

@@ -30,6 +30,10 @@ Distributed as-is; no warranty is given.
  void readCAN (tCAN message) ;
  void writeCAN (tCAN message, int forwardSpeed, int turnRate) ;
  void writeCAN (tCAN message, int forwardSpeed, int turnRate) ;
+ int compensateJoystickSpeed() ;
+ int compensateJoystickSpeed() ;
+ int compensateJoystickDirection() ;
+ int compensateJoystickDirection() ;
  void setup() ;
  void setup() ;
  void loop()  ;
@@ -41,8 +45,14 @@ Distributed as-is; no warranty is given.
 double calcAngle = 0;
 double distSetpoint = 1;
 
-//PID Variabeln
+double dist = 0;
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
+
+int joystickDirection;
+int joystickSpeed;
+
+/*
+//PID Variabeln
 double turnSetpoint; //Soll-Winkel
 double turnInput; //Differenz zwischen soll und ist winkel
 double turnOutput; //IST-Winkel, für Motorenansteuerung nutzen
@@ -52,32 +62,26 @@ double Kp=20, Ki=10, Kd=10;
 PID motorPID(&turnInput, &turnOutput, &turnSetpoint, Kp, Ki, Kd, DIRECT);
 
 double KpD=100, KiD=0, KdD=0;
-double dist = 0;
+
 double distInput;
 double distOutput;
 PID distPID(&distInput, &distOutput, &distSetpoint, KpD, KiD, KdD, DIRECT);
-
+*/
 int currMillis = 0;
 int oldMillis = -1;
 
 
 void readCAN (tCAN message) {
 
-    int joystickDirection;
-    int joystickSpeed;
-
     if (mcp2515_get_message(&message))
     {
-        /*
         //Read Joystick-Data
         if(message.id == 0x081) //Filter ID
         {
             joystickDirection = message.data[0];
             joystickSpeed = message.data[1];
-
-            Serial.println("Joystick:   Direction: " + String(joystickDirection) + ";  Speed: " + String(joystickSpeed));
+            //Serial.println("Joystick:   Direction: " + String(joystickDirection) + ";  Speed: " + String(joystickSpeed));
         }
-         */
 
         //Motorenencoder auslesen
         if(message.id == 0x7FF) //Filter ID
@@ -93,7 +97,7 @@ void readCAN (tCAN message) {
             float vl = (2*PI*currSpeedLeft) / 60 * 0.1725;
             float vr = (2*PI*currSpeedRight) / 60 * 0.1725;
 
-            //Serial.println("vl: " + String(vl) + ";  vr: " + String(vr));
+            Serial.println("vl: " + String(vl) + ";  vr: " + String(vr));
             //Serial.println("oldMillis: " + String(oldMillis) + "  currMillis: " +  String(currMillis));
 
             if (oldMillis != -1) {
@@ -109,7 +113,9 @@ void readCAN (tCAN message) {
             oldMillis = millis();
             //Serial.println("Gedrehter Winkel " + String(turnedAngle));
         }
+
     }
+
 }
 
 void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
@@ -125,6 +131,29 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     mcp2515_send_message(&message);
 
     delay(10);
+}
+
+int compensateJoystickSpeed() {
+        int forwardSpeed;
+        if (joystickSpeed < 120) {
+            forwardSpeed = joystickSpeed * (-1);
+        }
+        else {
+            forwardSpeed = 100 - (joystickSpeed - 150);
+        }
+        return forwardSpeed;
+}
+
+int compensateJoystickDirection() {
+    int turnRate;
+    if (joystickDirection < 120) {
+        turnRate = joystickDirection * (-1);
+    }
+    else {
+        turnRate = 100 - (joystickDirection - 150);
+    }
+
+    return turnRate;
 }
 
 
@@ -145,6 +174,7 @@ void setup() {
 
 
     //PID-Initialisierung
+    /*
     turnSetpoint = calcAngle;
     turnOutput = 0;
     motorPID.SetMode(AUTOMATIC); //Turn PID on
@@ -152,6 +182,7 @@ void setup() {
 
     distPID.SetMode(AUTOMATIC);
     distPID.SetTunings(KpD,KiD,KdD);
+     */
 }
 
 
@@ -163,9 +194,12 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
     int turnRate = 0; // + -> rechts Kurve  | - -> links Kurve | 0 -> Geradeaus || 100 = L vorwärtas, R rückwärts, 50 nur ein Rad in Betrieb
 
     readCAN(message);
-    //writeCAN(message,forwardSpeed,turnRate);
+    forwardSpeed = compensateJoystickSpeed();
+    turnRate = compensateJoystickDirection();
+    writeCAN(message,forwardSpeed,turnRate);
 
     //=========PID-Verarbeitung===============
+    /*
     turnSetpoint = calcAngle;
     turnInput = turnedAngle;
     motorPID.Compute(); //PID berechnung
@@ -177,6 +211,6 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
     Serial.println( "Distanz:  "+ String(dist)+" Turned Angle: " + String(turnedAngle) + "  |  Output PIDDist: " + String(distOutput) +  "  Output PIDTurn: " + String(turnOutput));
 
     writeCAN(message,distOutput,(turnOutput*-1)); //Gibt Motorensteuerung anhand Output PID
-
+    */
 
 }
