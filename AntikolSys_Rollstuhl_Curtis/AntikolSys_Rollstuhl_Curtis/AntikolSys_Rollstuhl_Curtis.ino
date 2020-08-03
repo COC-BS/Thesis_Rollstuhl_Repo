@@ -42,6 +42,10 @@ float phi;
 float phi2;
 float dist;
 
+bool compJoystick = false;
+bool driveForward = false;
+int joystickSpeed;
+int joystickDirection;
 int status = -1;
 
 const byte interruptPin = 2;
@@ -114,11 +118,15 @@ void resetSystem (int nextStatus) {
 
 void readCAN (tCAN message) {
 
-    int joystickDirection;
-    int joystickSpeed;
-
     if (mcp2515_get_message(&message))
     {
+        if(message.id == 0x081) //Filter ID
+        {
+            joystickDirection = message.data[0];
+            joystickSpeed = message.data[1];
+            //Serial.println("Joystick:   Direction: " + String(joystickDirection) + ";  Speed: " + String(joystickSpeed));
+        }
+
         //Motorenencoder auslesen
         if(message.id == 0x7FF) //Filter ID
         {
@@ -494,7 +502,7 @@ void scanLidar (int nextStatus) {
 
         } else {
             analogWrite(RPLIDAR_MOTOR, 0); //stop the rplidar motor
-
+            Serial.println("LIDAR-ERROR");
             // try to detect RPLIDAR...
             rplidar_response_device_info_t info;
             if (IS_OK(lidar.getDeviceInfo(info, 100))) {
@@ -561,6 +569,39 @@ void led(int ledcolor) {
     }
 }
 
+void compensateJoystick(bool driveForward) {
+
+    tCAN message;
+    int forwardSpeed;
+    int turnRate;
+
+   readCAN(message);
+
+    //Compensation Joystick input forward-backward
+    if (joystickSpeed < 120) {
+        forwardSpeed = joystickSpeed * (-1);
+
+        //Lässt vorwärtsfahrt zu im allgemeinen Code if, nur möglich wenn Vorwärtsfahrt gefordert
+        if (driveForward)
+        forwardSpeed += joystickSpeed * 0.5;
+    }
+    else {
+        forwardSpeed = 100 - (joystickSpeed - 150);
+    }
+
+    //Compensate Joystick input left-right
+    if (joystickDirection < 120) {
+        turnRate = joystickDirection * (-1);
+    }
+    else {
+        turnRate = 100 - (joystickDirection - 150);
+    }
+
+    Serial.println("forwardSpeed:  " + String(forwardSpeed) + "   turnRate:  " + String(turnRate));
+
+    writeCAN(message, forwardSpeed, turnRate);
+}
+
 void setup() {
     // bind the RPLIDAR driver to the arduino hardware serial
     lidar.begin(Serial3);
@@ -600,12 +641,15 @@ void setup() {
 
 
 void loop() {
-    //Scan for Points with the LIDAR and search a Door
+
+    driveForward = false;
+
 
     //Türdetektion als einzelner Case
 
     switch (status) {
         case 0:
+            compJoystick = true;
             Serial.println("LIDAR-Scan");
             led(1);
             scanLidar(1);
@@ -622,6 +666,7 @@ void loop() {
             motorCommandRotation(phi,3);
             break;
         case 3:
+            driveForward = true;
             led(1);
             motorCommandApproach(dist,4);
             break;
@@ -630,23 +675,32 @@ void loop() {
             motorCommandRotation(phi2,5);
             break;
         case 5:
+            driveForward = true;
             led(1);
             motorCommandApproach(dist+40,16);
             break;
         case 15:
+            compJoystick = false;
             Serial.println("Error, Reset System");
             resetSystem(-1);
             led(2);
             delay(2000);
             break;
         case 16:
+            compJoystick = false;
             led(1);
             Serial.println("Door passed, Reset System");
             resetSystem(-1);
             break;
         default:
+            compJoystick = false;
             led(0);
             break;
     }
+
+    if (compJoystick) {
+        compensateJoystick(driveForward);
+    }
+
 
 }

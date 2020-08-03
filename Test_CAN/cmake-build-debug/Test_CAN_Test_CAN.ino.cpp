@@ -137,6 +137,8 @@ int compensateJoystickSpeed() {
         int forwardSpeed;
         if (joystickSpeed < 120) {
             forwardSpeed = joystickSpeed * (-1);
+
+            forwardSpeed += joystickSpeed * 0.5;
         }
         else {
             forwardSpeed = 100 - (joystickSpeed - 150);
@@ -146,12 +148,17 @@ int compensateJoystickSpeed() {
 
 int compensateJoystickDirection() {
     int turnRate;
+    //Compensate Joystick input
     if (joystickDirection < 120) {
         turnRate = joystickDirection * (-1);
     }
     else {
         turnRate = 100 - (joystickDirection - 150);
     }
+
+    
+
+
 
     return turnRate;
 }
@@ -196,6 +203,7 @@ void loop() //Loop darf nicht länger als 200ms gehen, sonst automatischer Stopp
     readCAN(message);
     forwardSpeed = compensateJoystickSpeed();
     turnRate = compensateJoystickDirection();
+
     writeCAN(message,forwardSpeed,turnRate);
 
     //=========PID-Verarbeitung===============
