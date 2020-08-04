@@ -80,6 +80,7 @@ int oldMillis = -1;
 
 void resetSystem (int nextStatus) {
 
+    /*
     for (int i = 0; i < 90; ++i) {
         Serial.print(points[i].angle);
         Serial.print(" ");
@@ -87,6 +88,7 @@ void resetSystem (int nextStatus) {
         Serial.print(" ");
         Serial.println(points[i].quality);
     }
+    */
 
     for (int j = 0; j < 90; ++j) {
         points[j].dist = 0;
@@ -174,8 +176,47 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     delay(10);
 }
 
-void motorCommandApproach (float distance, int nextStatus) {
-    tCAN message;
+void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRate, tCAN message) {
+
+    int forwardSpeed;
+    int turnRate;
+
+    readCAN(message);
+
+    //Compensation Joystick input forward-backward
+    if (joystickSpeed < 120) {
+        forwardSpeed = joystickSpeed * (-1);
+
+        //Lässt vorwärtsfahrt zu im allgemeinen Code if, nur möglich wenn Vorwärtsfahrt gefordert
+        if (driveForward)
+            forwardSpeed += joystickSpeed * 0.25;
+    }
+    else {
+        forwardSpeed = 100 - (joystickSpeed - 150);
+    }
+
+    //Compensate Joystick input left-right
+    if (joystickDirection < 120) {
+        turnRate = joystickDirection * (-1);
+    }
+    else {
+        turnRate = 100 - (joystickDirection - 150);
+    }
+
+    //Reset with Joystick
+    if ((joystickDirection > 50 && joystickDirection < 100) || (joystickDirection > 150 && joystickDirection < 200)) {
+        status = 16;
+    }
+
+
+    //Serial.println("forwardSpeed:  " + String(forwardSpeed) + "   turnRate:  " + String(turnRate));
+    forwardSpeed += mCtlForwardSpeed;
+    turnRate += mCtlTurnRate;
+
+    writeCAN(message, forwardSpeed, turnRate);
+}
+
+void motorCommandApproach (float distance, int nextStatus, tCAN message) {
     //Read Encoder Motor and calculate turned angle
     readCAN(message);
     distSetpoint = (distance)/100;
@@ -187,7 +228,9 @@ void motorCommandApproach (float distance, int nextStatus) {
     motorPID.Compute();
 
    //Serial.println("Dist Setpoint: " + String(distSetpoint) + "  Output PID: " + String(distOutput) + "  Drove Dist: " + String(droveDist));
-    writeCAN(message,distOutput,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+    //writeCAN(message,distOutput,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+
+    compensateJoystick(true, 0, (Output*-1), message);
 
     float distAbs = (distSetpoint - droveDist);
 
@@ -202,8 +245,7 @@ void motorCommandApproach (float distance, int nextStatus) {
     }
 }
 
-void motorCommandRotation(float phi, int nextStatus) {
-    tCAN message;
+void motorCommandRotation(float phi, int nextStatus, tCAN message) {
     //Read Encoder Motor and calculate turned angle
     readCAN(message);
     Setpoint = phi;
@@ -211,7 +253,9 @@ void motorCommandRotation(float phi, int nextStatus) {
     motorPID.Compute();
 
     //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
-    writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+    //writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
+
+    compensateJoystick(false, 0, (Output*-1),message);
 
     float angleAbs = (abs(phi) - abs(turnedAngle));
     if (angleAbs < 0.1 && angleAbs > -0.1) {
@@ -224,8 +268,6 @@ void motorCommandRotation(float phi, int nextStatus) {
 }
 
 void calcDriveAngle () {
-    //Joystick Addresse: 0x081; Byte 0 = Direction; Byte 1 = Speed
-
     Points middleDoor;
     middleDoor.dist = (doorPoints[0].dist + doorPoints[1].dist) / 2;
     middleDoor.angle = (doorPoints[0].angle + doorPoints[1].angle) / 2;
@@ -269,7 +311,6 @@ void calcDriveAngle () {
 
     Serial.print("Winkel Phi: ");
     Serial.println(phi);
-    Serial.println("#==============================================");
 
     status = 2;
 }
@@ -502,7 +543,6 @@ void scanLidar (int nextStatus) {
 
         } else {
             analogWrite(RPLIDAR_MOTOR, 0); //stop the rplidar motor
-            Serial.println("LIDAR-ERROR");
             // try to detect RPLIDAR...
             rplidar_response_device_info_t info;
             if (IS_OK(lidar.getDeviceInfo(info, 100))) {
@@ -569,39 +609,6 @@ void led(int ledcolor) {
     }
 }
 
-void compensateJoystick(bool driveForward) {
-
-    tCAN message;
-    int forwardSpeed;
-    int turnRate;
-
-   readCAN(message);
-
-    //Compensation Joystick input forward-backward
-    if (joystickSpeed < 120) {
-        forwardSpeed = joystickSpeed * (-1);
-
-        //Lässt vorwärtsfahrt zu im allgemeinen Code if, nur möglich wenn Vorwärtsfahrt gefordert
-        if (driveForward)
-        forwardSpeed += joystickSpeed * 0.5;
-    }
-    else {
-        forwardSpeed = 100 - (joystickSpeed - 150);
-    }
-
-    //Compensate Joystick input left-right
-    if (joystickDirection < 120) {
-        turnRate = joystickDirection * (-1);
-    }
-    else {
-        turnRate = 100 - (joystickDirection - 150);
-    }
-
-    Serial.println("forwardSpeed:  " + String(forwardSpeed) + "   turnRate:  " + String(turnRate));
-
-    writeCAN(message, forwardSpeed, turnRate);
-}
-
 void setup() {
     // bind the RPLIDAR driver to the arduino hardware serial
     lidar.begin(Serial3);
@@ -642,65 +649,53 @@ void setup() {
 
 void loop() {
 
-    driveForward = false;
-
-
-    //Türdetektion als einzelner Case
+    tCAN message;
 
     switch (status) {
         case 0:
-            compJoystick = true;
             Serial.println("LIDAR-Scan");
+            compensateJoystick(false,0,0,message);
             led(1);
             scanLidar(1);
             break;
         case 1:
             //Serial.println("Calculate Angle");
             //calcDriveAngle();
+            compensateJoystick(false,0,0,message);
             led(1);
             driveCommandDirect(2);
             break;
         case 2:
             //Serial.println("Motor Commands");
             led(1);
-            motorCommandRotation(phi,3);
+            motorCommandRotation(phi,3, message);
             break;
         case 3:
-            driveForward = true;
             led(1);
-            motorCommandApproach(dist,4);
+            motorCommandApproach(dist,4, message);
             break;
         case 4:
             led(1);
-            motorCommandRotation(phi2,5);
+            motorCommandRotation(phi2,5, message);
             break;
         case 5:
-            driveForward = true;
             led(1);
-            motorCommandApproach(dist+40,16);
+            motorCommandApproach(dist+40,16, message);
             break;
         case 15:
-            compJoystick = false;
             Serial.println("Error, Reset System");
             resetSystem(-1);
             led(2);
             delay(2000);
             break;
         case 16:
-            compJoystick = false;
             led(1);
-            Serial.println("Door passed, Reset System");
+            Serial.println("Reset System");
             resetSystem(-1);
             break;
         default:
-            compJoystick = false;
             led(0);
             break;
     }
-
-    if (compJoystick) {
-        compensateJoystick(driveForward);
-    }
-
 
 }
