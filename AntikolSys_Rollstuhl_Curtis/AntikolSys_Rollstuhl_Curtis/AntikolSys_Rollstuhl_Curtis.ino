@@ -8,7 +8,7 @@
 
 RPLidar lidar;
 
-bool showPoints = false;
+bool showPoints = true;
 
 struct Vector {
     float x;
@@ -34,7 +34,7 @@ float angleReadMax = 225;
 int sensorOffsetX = 40;
 int sensorOffsetY = 20;
 
-int edgeThreshhold = -50;
+int edgeThreshhold = -80;
 
 //Drehwinkel auf Ausgangslage
 float phi;
@@ -79,17 +79,6 @@ int currMillis;
 int oldMillis = -1;
 
 void resetSystem (int nextStatus) {
-
-    /*
-    for (int i = 0; i < 90; ++i) {
-        Serial.print(points[i].angle);
-        Serial.print(" ");
-        Serial.print(points[i].dist);
-        Serial.print(" ");
-        Serial.println(points[i].quality);
-    }
-    */
-
     for (int j = 0; j < 90; ++j) {
         points[j].dist = 0;
         points[j].angle = 0;
@@ -189,7 +178,7 @@ void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRat
 
         //Lässt vorwärtsfahrt zu im allgemeinen Code if, nur möglich wenn Vorwärtsfahrt gefordert
         if (driveForward)
-            forwardSpeed += joystickSpeed * 0.25;
+            forwardSpeed += joystickSpeed * 0.2;
     }
     else {
         forwardSpeed = 100 - (joystickSpeed - 150);
@@ -454,8 +443,6 @@ void detectDoor (int edgeThreshold, int nextStatus) {
         }
     }
 
-
-
     boolean door = false;
 
     int compareIndex = 0;
@@ -464,7 +451,6 @@ void detectDoor (int edgeThreshold, int nextStatus) {
         compareIndex++;
         for (int i = compareIndex; i < edgeIndex; ++i) {
             float angleRad = cos((edgePoints[j].angle - edgePoints[i].angle) * PI / 180);
-
             float b = edgePoints[j].dist / 10;
             float c = edgePoints[i].dist / 10;
             float dist = sqrtf(pow(b, 2) + pow(c, 2) - 2 * b * c * angleRad);
@@ -527,7 +513,7 @@ void detectDoor (int edgeThreshold, int nextStatus) {
 }
 
 void scanLidar (int nextStatus) {
-    for (int i = 0; i < 1000; ++i) {
+    for (int i = 0; i < 200; ++i) {
         if (IS_OK(lidar.waitPoint())) {
             float distance = lidar.getCurrentPoint().distance; //distance value in cm unit
             float angle = lidar.getCurrentPoint().angle; //anglue value in degree
@@ -548,7 +534,6 @@ void scanLidar (int nextStatus) {
             if (IS_OK(lidar.getDeviceInfo(info, 100))) {
                 // detected...
                 lidar.startScan();
-
                 // start motor rotating at max allowed speed
                 analogWrite(RPLIDAR_MOTOR, 255);
                 delay(1000);
@@ -654,7 +639,7 @@ void loop() {
     switch (status) {
         case 0:
             Serial.println("LIDAR-Scan");
-            compensateJoystick(false,0,0,message);
+            //compensateJoystick(false,0,0,message);
             led(1);
             scanLidar(1);
             break;
@@ -672,7 +657,7 @@ void loop() {
             break;
         case 3:
             led(1);
-            motorCommandApproach(dist,4, message);
+            motorCommandApproach(dist-10,4, message);
             break;
         case 4:
             led(1);
@@ -686,7 +671,7 @@ void loop() {
             Serial.println("Error, Reset System");
             resetSystem(-1);
             led(2);
-            delay(2000);
+            delay(3000);
             break;
         case 16:
             led(1);
