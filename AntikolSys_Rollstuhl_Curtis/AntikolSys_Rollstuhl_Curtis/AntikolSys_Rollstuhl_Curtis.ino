@@ -8,7 +8,7 @@
 
 RPLidar lidar;
 
-bool showPoints = true;
+bool showPoints = false;
 
 struct Vector {
     float x;
@@ -513,7 +513,7 @@ void detectDoor (int edgeThreshold, int nextStatus) {
 }
 
 void scanLidar (int nextStatus) {
-    for (int i = 0; i < 200; ++i) {
+    for (int i = 0; i < 400; ++i) {
         if (IS_OK(lidar.waitPoint())) {
             float distance = lidar.getCurrentPoint().distance; //distance value in cm unit
             float angle = lidar.getCurrentPoint().angle; //anglue value in degree
@@ -546,7 +546,6 @@ void scanLidar (int nextStatus) {
             points[i].angle = 135+i;
             points[i].dist = 5000;
         }
-
     }
 
     //Print points-Buffer to the Serial
@@ -570,8 +569,6 @@ void scanLidar (int nextStatus) {
 void btChange() {
     if (status == -1)
         status = 0;
-    else
-        status = -1;
 }
 
 void led(int ledcolor) {
@@ -589,6 +586,11 @@ void led(int ledcolor) {
         case 2:
             digitalWrite(LEDGREEN, LOW);
             digitalWrite(LEDBLUE, LOW);
+            digitalWrite(LEDRED, HIGH);
+            break;
+        case 3:
+            digitalWrite(LEDGREEN, HIGH);
+            digitalWrite(LEDBLUE, HIGH);
             digitalWrite(LEDRED, HIGH);
             break;
     }
@@ -652,7 +654,7 @@ void loop() {
             break;
         case 2:
             //Serial.println("Motor Commands");
-            led(1);
+            led(3);
             motorCommandRotation(phi,3, message);
             break;
         case 3:
@@ -660,7 +662,7 @@ void loop() {
             motorCommandApproach(dist-10,4, message);
             break;
         case 4:
-            led(1);
+            led(3);
             motorCommandRotation(phi2,5, message);
             break;
         case 5:
