@@ -42,8 +42,6 @@ float phi;
 float phi2;
 float dist;
 
-bool compJoystick = false;
-bool driveForward = false;
 int joystickSpeed;
 int joystickDirection;
 int status = -1;
@@ -53,8 +51,8 @@ const byte interruptPin = 2;
 #define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
 #define LEDRED 8
-#define LEDGREEN 9
-#define LEDBLUE 10
+#define LEDGREEN 10
+#define LEDBLUE 9
 
 //PID Variabeln Drehen
 double turnedAngle = 0; //Winkel der durch Encoder ermittelt wurde
@@ -103,8 +101,39 @@ void resetSystem (int nextStatus) {
         doorPoints[i].y = 0;
     }
     edgeIndex = 0;
+    doorIndex = 0;
+    phi = 0;
+    phi2 = 0;
+    dist = 0;
+
+    oldMillis = -1;
 
     status = nextStatus;
+}
+
+void led(int ledcolor) {
+    switch (ledcolor) {
+        case 0:
+            digitalWrite(LEDGREEN, HIGH);
+            digitalWrite(LEDBLUE, LOW);
+            digitalWrite(LEDRED, LOW);
+            break;
+        case 1:
+            digitalWrite(LEDGREEN, LOW);
+            digitalWrite(LEDBLUE, HIGH);
+            digitalWrite(LEDRED, LOW);
+            break;
+        case 2:
+            digitalWrite(LEDGREEN, LOW);
+            digitalWrite(LEDBLUE, LOW);
+            digitalWrite(LEDRED, HIGH);
+            break;
+        case 3:
+            digitalWrite(LEDGREEN, HIGH);
+            digitalWrite(LEDBLUE, HIGH);
+            digitalWrite(LEDRED, LOW);
+            break;
+    }
 }
 
 void readCAN (tCAN message) {
@@ -223,7 +252,7 @@ void motorCommandApproach (float distance, int nextStatus, tCAN message) {
 
     float distAbs = (distSetpoint - droveDist);
 
-    if (distAbs < 0.05 && distAbs > -0.05) {
+    if (distAbs < 0.1 && distAbs > -0.1) {
         Serial.println("Drove forward!      Drove Dist: " + String(droveDist));
         Serial.println("#==============================================");
         turnedAngle = 0;
@@ -374,7 +403,7 @@ void driveCommandDirect (int nextStatus) {
     Serial.print("Distanz: ");
     Serial.println(middleDoor.dist);
 
-    if (status == 1) {
+    //if (status == 1) {
 
     Vector w, m;
     w.x = (doorPoints[1].x - doorPoints[0].x);
@@ -415,7 +444,7 @@ void driveCommandDirect (int nextStatus) {
     Serial.print("Winkel Phi2: ");
     Serial.println(phi2);
 
-    }
+    //}
 
     status = nextStatus;
 }
@@ -513,8 +542,40 @@ void detectDoor (int edgeThreshold, int nextStatus) {
 }
 
 void scanLidar (int nextStatus) {
-    for (int i = 0; i < 400; ++i) {
+    /*
+    for (int i = 0; i < 200; ++i) {
         if (IS_OK(lidar.waitPoint())) {
+            led(1);
+            float distance = lidar.getCurrentPoint().distance; //distance value in cm unit
+            float angle = lidar.getCurrentPoint().angle; //anglue value in degree
+            byte quality = lidar.getCurrentPoint().quality; //quality of the current measurement
+
+
+            //If point is in front of the LIDAR (135 - 225)
+            if (angle <= angleReadMax && angle >= angleReadMin) {
+                int rndAngle = static_cast<int>(angle);
+                points[rndAngle - 135].angle = rndAngle;
+                points[rndAngle - 135].dist = (distance / 10);
+                points[rndAngle - 135].quality = quality;
+            }
+
+
+        } else {
+            analogWrite(RPLIDAR_MOTOR, 0); //stop the rplidar motor
+            // try to detect RPLIDAR...
+
+            // detected...
+            lidar.startScan();
+            // start motor rotating at max allowed speed
+            analogWrite(RPLIDAR_MOTOR, 255);
+            delay(3000);
+        }
+    }
+     */
+
+    for (int i = 0; i < 1000; ++i) {
+        if (IS_OK(lidar.waitPoint())) {
+
             float distance = lidar.getCurrentPoint().distance; //distance value in cm unit
             float angle = lidar.getCurrentPoint().angle; //anglue value in degree
             byte quality = lidar.getCurrentPoint().quality; //quality of the current measurement
@@ -522,22 +583,16 @@ void scanLidar (int nextStatus) {
             //If point is in front of the LIDAR (135 - 225)
             if (angle <= angleReadMax && angle >= angleReadMin) {
                 int rndAngle = static_cast<int>(angle);
-                points[rndAngle-135].angle = rndAngle;
-                points[rndAngle-135].dist = (distance/10);
-                points[rndAngle-135].quality = quality;
+                points[rndAngle - 135].angle = rndAngle;
+                points[rndAngle - 135].dist = distance;
+                points[rndAngle - 135].quality = quality;
             }
-
         } else {
             analogWrite(RPLIDAR_MOTOR, 0); //stop the rplidar motor
-            // try to detect RPLIDAR...
-            rplidar_response_device_info_t info;
-            if (IS_OK(lidar.getDeviceInfo(info, 100))) {
-                // detected...
-                lidar.startScan();
-                // start motor rotating at max allowed speed
-                analogWrite(RPLIDAR_MOTOR, 255);
-                delay(1000);
-            }
+            delay(1000);
+            lidar.startScan();
+            analogWrite(RPLIDAR_MOTOR, 255);
+            delay(1000);
         }
     }
 
@@ -545,6 +600,9 @@ void scanLidar (int nextStatus) {
         if (points[i].dist == 0) {
             points[i].angle = 135+i;
             points[i].dist = 5000;
+        }
+        else {
+            points[i].dist /= 10;
         }
     }
 
@@ -569,31 +627,6 @@ void scanLidar (int nextStatus) {
 void btChange() {
     if (status == -1)
         status = 0;
-}
-
-void led(int ledcolor) {
-    switch (ledcolor) {
-        case 0:
-            digitalWrite(LEDGREEN, HIGH);
-            digitalWrite(LEDBLUE, LOW);
-            digitalWrite(LEDRED, LOW);
-            break;
-        case 1:
-            digitalWrite(LEDGREEN, LOW);
-            digitalWrite(LEDBLUE, HIGH);
-            digitalWrite(LEDRED, LOW);
-            break;
-        case 2:
-            digitalWrite(LEDGREEN, LOW);
-            digitalWrite(LEDBLUE, LOW);
-            digitalWrite(LEDRED, HIGH);
-            break;
-        case 3:
-            digitalWrite(LEDGREEN, HIGH);
-            digitalWrite(LEDBLUE, HIGH);
-            digitalWrite(LEDRED, HIGH);
-            break;
-    }
 }
 
 void setup() {
@@ -653,7 +686,6 @@ void loop() {
             driveCommandDirect(2);
             break;
         case 2:
-            //Serial.println("Motor Commands");
             led(3);
             motorCommandRotation(phi,3, message);
             break;

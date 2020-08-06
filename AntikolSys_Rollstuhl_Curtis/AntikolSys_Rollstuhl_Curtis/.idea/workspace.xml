@@ -24,6 +24,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AntikolSys_Rollstuhl_Curtis.dir/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +150,7 @@
       <workItem from="1596447678533" duration="5674000" />
       <workItem from="1596530541017" duration="9847000" />
       <workItem from="1596623732063" duration="2325000" />
+      <workItem from="1596717303760" duration="8237000" />
     </task>
     <servers />
   </component>
@@ -209,11 +212,11 @@
     <state width="938" height="348" key="GridCell.Tab.1.right/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1596116433771" />
     <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1504.963@0.0.1504.963" timestamp="1595584495317" />
     <state width="938" height="348" key="GridCell.Tab.1.right/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1593682127475" />
-    <state x="890" y="319" key="com.intellij.ide.util.TipDialog" timestamp="1596623775838">
+    <state x="890" y="319" key="com.intellij.ide.util.TipDialog" timestamp="1596717314199">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="1136" y="345" key="com.intellij.ide.util.TipDialog/-2256.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1596530628520" />
-    <state x="890" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1596623775838" />
+    <state x="890" y="319" key="com.intellij.ide.util.TipDialog/0.0.1504.963@0.0.1504.963" timestamp="1596717314199" />
     <state x="1138" y="347" key="com.intellij.ide.util.TipDialog/1920.0.1504.976/0.0.1920.1040@0.0.1920.1040" timestamp="1594799651884" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595513847649">
       <screen x="0" y="0" width="1920" height="1040" />
