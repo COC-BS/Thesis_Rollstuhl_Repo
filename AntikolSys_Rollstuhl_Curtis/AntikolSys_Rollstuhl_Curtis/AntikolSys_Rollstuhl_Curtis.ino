@@ -73,8 +73,8 @@ double distInput;
 double distOutput;
 PID distPID(&distInput, &distOutput, &distSetpoint, KpD, KiD, KdD, DIRECT);
 
-int currMillis;
-int oldMillis = -1;
+unsigned long currMillis;
+unsigned long oldMillis = -1;
 
 void resetSystem (int nextStatus) {
     for (int j = 0; j < 90; ++j) {
@@ -269,7 +269,6 @@ void motorCommandRotation(float phi, int nextStatus, tCAN message) {
     Setpoint = phi;
     Input = turnedAngle;
     motorPID.Compute();
-
     //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
     //writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
@@ -675,14 +674,13 @@ void loop() {
         case 0:
             Serial.println("LIDAR-Scan");
             //compensateJoystick(false,0,0,message);
-            led(1);
+            led(3);
             scanLidar(1);
             break;
         case 1:
-            //Serial.println("Calculate Angle");
             //calcDriveAngle();
             compensateJoystick(false,0,0,message);
-            led(1);
+            led(3);
             driveCommandDirect(2);
             break;
         case 2:
