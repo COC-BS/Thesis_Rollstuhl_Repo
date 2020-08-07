@@ -21,9 +21,6 @@
     <list default="true" id="8a2f6f45-0263-4231-baf2-5fe7953d9793" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AntikolSys_Rollstuhl_Curtis.ino" beforeDir="false" afterPath="$PROJECT_DIR$/AntikolSys_Rollstuhl_Curtis.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/AntikolSys_Rollstuhl_Curtis_AntikolSys_Rollstuhl_Curtis.ino.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +147,7 @@
       <workItem from="1596623732063" duration="2325000" />
       <workItem from="1596717303760" duration="8303000" />
       <workItem from="1596784324515" duration="3183000" />
+      <workItem from="1596807499849" duration="2837000" />
     </task>
     <servers />
   </component>

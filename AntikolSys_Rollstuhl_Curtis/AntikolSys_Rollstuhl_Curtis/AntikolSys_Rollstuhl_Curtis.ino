@@ -6,9 +6,11 @@
 #include <Arduino.h>
 #include <math.h>
 
-RPLidar lidar;
+bool showPoints = false; //Anusgabe von Messpunkten im Serial Monitor
 
-bool showPoints = false;
+int status = -1; //Statusvariable für State-Machine
+
+RPLidar lidar;
 
 struct Vector {
     float x;
@@ -28,12 +30,15 @@ Points doorPoints[6];
 int edgeIndex = 0;
 int doorIndex = 0;
 
+//Winkel der vom LIDAR gemessen werden soll
 float angleReadMin = 135;
 float angleReadMax = 225;
 
+//Sesnorversatz vom Rollstuhlmittelpunkt
 int sensorOffsetX = 40;
 int sensorOffsetY = 20;
 
+//Grenzwert für Kantendetektion
 int edgeThreshhold = -80;
 
 //Drehwinkel auf Ausgangslage
@@ -44,9 +49,8 @@ float dist;
 
 int joystickSpeed;
 int joystickDirection;
-int status = -1;
 
-const byte interruptPin = 2;
+const byte interruptPin = 2; //Button-Pin
 
 #define RPLIDAR_MOTOR 3 //PWM Pin für Lidar Motorengeschwindigkeit
 #define CANEn 22  // Externer Pin für CAN Shield Enable, Slave Select
@@ -73,9 +77,14 @@ double distInput;
 double distOutput;
 PID distPID(&distInput, &distOutput, &distSetpoint, KpD, KiD, KdD, DIRECT);
 
+//Zeitstempel für Encoderberechnung
 unsigned long currMillis;
 unsigned long oldMillis = -1;
 
+/**
+ * Setzt alle Variabeln und Messpunkte zurück
+ * @param nextStatus: Status welcher als nächstes aufgerufen werden soll
+ */
 void resetSystem (int nextStatus) {
     for (int j = 0; j < 90; ++j) {
         points[j].dist = 0;
@@ -110,25 +119,28 @@ void resetSystem (int nextStatus) {
 
     status = nextStatus;
 }
-
+/**
+ * Schaltet entsprechende LED-Kombination ein
+ * @param ledcolor: Wert um Muster zu wählen
+ */
 void led(int ledcolor) {
     switch (ledcolor) {
-        case 0:
+        case 0: //Grün
             digitalWrite(LEDGREEN, HIGH);
             digitalWrite(LEDBLUE, LOW);
             digitalWrite(LEDRED, LOW);
             break;
-        case 1:
+        case 1: //Blau
             digitalWrite(LEDGREEN, LOW);
             digitalWrite(LEDBLUE, HIGH);
             digitalWrite(LEDRED, LOW);
             break;
-        case 2:
+        case 2: //Rot
             digitalWrite(LEDGREEN, LOW);
             digitalWrite(LEDBLUE, LOW);
             digitalWrite(LEDRED, HIGH);
             break;
-        case 3:
+        case 3: //Grün&Blau
             digitalWrite(LEDGREEN, HIGH);
             digitalWrite(LEDBLUE, HIGH);
             digitalWrite(LEDRED, LOW);
@@ -136,11 +148,15 @@ void led(int ledcolor) {
     }
 }
 
+/**
+ * Motorenencoderwerte auf dem CAN-Bus auslesen
+ * @param message
+ */
 void readCAN (tCAN message) {
-
     if (mcp2515_get_message(&message))
     {
-        if(message.id == 0x081) //Filter ID
+        //Joystickdaten auslesen
+        if(message.id == 0x081) //CAN-ID Joystickdaten
         {
             joystickDirection = message.data[0];
             joystickSpeed = message.data[1];
@@ -148,16 +164,16 @@ void readCAN (tCAN message) {
         }
 
         //Motorenencoder auslesen
-        if(message.id == 0x7FF) //Filter ID
+        if(message.id == 0x7FF) //CAN-ID Motorenencoder
         {
-            //Get left and right Motorspeed (RPM)
+            //Linke und Rechte Motroengeschwindigkeit (RPM), 21.33 -> Encoder-Rad Verhältnis
             float currSpeedLeft = (message.data[4] + message.data[5] * 256) / 21.33;
             float currSpeedRight = (message.data[6] + message.data[7] * 256) / 21.33;
             //Serial.println("Encoder:   Left: " + String(currSpeedLeft) + ";  Right: " + String(currSpeedRight));
 
             currMillis = millis();
 
-            //Winkel aus Encoderdaten, turnedAngle berechnen
+            //Radgeschiwndigkeiten [m/s]
             float vl = (2*PI*currSpeedLeft) / 60 * 0.1725;
             float vr = (2*PI*currSpeedRight) / 60 * 0.1725;
 
@@ -167,9 +183,9 @@ void readCAN (tCAN message) {
             if (oldMillis != -1) {
                 //Winkel in Radiant, Zeitschritt: Vorherige Zeit minus jetzige Zeit
                 float angleRad = (vr-vl) / (2 * 0.26) * (currMillis - oldMillis) / 1000;
-                //Winkel in Grad
+                //Gesamt gedrehter Winkel in Grad
                 turnedAngle += angleRad * 180 / PI;
-
+                //Gesamt zurückgelegte Distanz
                 droveDist += (vr + vl) / 2 *(currMillis - oldMillis) / 1000;
             }
 
@@ -179,14 +195,20 @@ void readCAN (tCAN message) {
     }
 }
 
+/**
+ * Fahrbefehle auf CAN-Bus schreiben
+ * @param message
+ * @param forwardSpeed, (0-100)
+ * @param turnRate, (+ rechts Kurve | - links Kurve | 0 Geradeaus || 100 = L vorwärtas, R rückwärts, 50 nur ein Rad in Betrieb
+ */
 void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
-    message.id = 0x03E; //formatted in HEX
+    message.id = 0x03E; //CAN-ID für Motorenansteuerung
     message.header.rtr = 0;
-    message.header.length = 8; //formatted in DEC
-    message.data[0] = lowByte(forwardSpeed); //Forward Speed in %
-    message.data[1] = highByte(forwardSpeed); //Forward Speed in %
-    message.data[2] = lowByte(turnRate); //Turn Rdnf searchate in %
-    message.data[3] = highByte(turnRate); //Turn Rate in %
+    message.header.length = 8;
+    message.data[0] = lowByte(forwardSpeed); //Vorwärtsgeschwindigkeit in %
+    message.data[1] = highByte(forwardSpeed);
+    message.data[2] = lowByte(turnRate); //Drehgeschwindigkeit in %
+    message.data[3] = highByte(turnRate);
 
     mcp2515_bit_modify(CANCTRL, (1<<REQOP2)|(1<<REQOP1)|(1<<REQOP0), 0);
     mcp2515_send_message(&message);
@@ -194,18 +216,24 @@ void writeCAN (tCAN message, int forwardSpeed, int turnRate) {
     delay(10);
 }
 
+/**
+ * Joystickeingaben kompensieren
+ * @param driveForward
+ * @param mCtlForwardSpeed
+ * @param mCtlTurnRate
+ * @param message
+ */
 void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRate, tCAN message) {
-
     int forwardSpeed;
     int turnRate;
 
     readCAN(message);
 
-    //Compensation Joystick input forward-backward
+    //Joystick Vorwärts-/Rückwärtseingaben kompensieren
     if (joystickSpeed < 120) {
         forwardSpeed = joystickSpeed * (-1);
 
-        //Lässt vorwärtsfahrt zu im allgemeinen Code if, nur möglich wenn Vorwärtsfahrt gefordert
+        //Vorwärtsfahrt zulassen bei Türanfahrt
         if (driveForward)
             forwardSpeed += joystickSpeed * 0.2;
     }
@@ -213,7 +241,7 @@ void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRat
         forwardSpeed = 100 - (joystickSpeed - 150);
     }
 
-    //Compensate Joystick input left-right
+    //Joystick Links-/Rechtseingaben kompensieren
     if (joystickDirection < 120) {
         turnRate = joystickDirection * (-1);
     }
@@ -221,7 +249,7 @@ void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRat
         turnRate = 100 - (joystickDirection - 150);
     }
 
-    //Reset with Joystick
+    //Durchfahrtsabbruch mittels Joystickeingabe
     if ((joystickDirection > 50 && joystickDirection < 100) || (joystickDirection > 150 && joystickDirection < 200)) {
         status = 16;
     }
@@ -234,6 +262,12 @@ void compensateJoystick(bool driveForward, int mCtlForwardSpeed, int mCtlTurnRat
     writeCAN(message, forwardSpeed, turnRate);
 }
 
+/**
+ * Assistierte Vorwärtsfahrt, geregelt durch PID-Regler
+ * @param distance
+ * @param nextStatus
+ * @param message
+ */
 void motorCommandApproach (float distance, int nextStatus, tCAN message) {
     //Read Encoder Motor and calculate turned angle
     readCAN(message);
@@ -246,7 +280,6 @@ void motorCommandApproach (float distance, int nextStatus, tCAN message) {
     motorPID.Compute();
 
    //Serial.println("Dist Setpoint: " + String(distSetpoint) + "  Output PID: " + String(distOutput) + "  Drove Dist: " + String(droveDist));
-    //writeCAN(message,distOutput,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
     compensateJoystick(true, 0, (Output*-1), message);
 
@@ -259,19 +292,25 @@ void motorCommandApproach (float distance, int nextStatus, tCAN message) {
         droveDist = 0;
 
         status = nextStatus;
-
     }
 }
 
+/**
+ * Assistierte Drehung, geregelt durch PID-Regler
+ * @param phi
+ * @param nextStatus
+ * @param message
+ */
 void motorCommandRotation(float phi, int nextStatus, tCAN message) {
-    //Read Encoder Motor and calculate turned angle
+    //Encoder auslesen und bereits gedrehter Winkel ermitteln
     readCAN(message);
+    //PID-Regelung
     Setpoint = phi;
     Input = turnedAngle;
     motorPID.Compute();
     //Serial.println("Output PID: " + String(Output) + "  Turned Angle: " + String(turnedAngle));
-    //writeCAN(message,0,(Output*-1)); //Gibt Motorensteuerung anhand Output PID
 
+    //Geregelte Drehung inkl. Joystickkompensation
     compensateJoystick(false, 0, (Output*-1),message);
 
     float angleAbs = (abs(phi) - abs(turnedAngle));
@@ -284,6 +323,9 @@ void motorCommandRotation(float phi, int nextStatus, tCAN message) {
     }
 }
 
+/**
+ * Fahrwegberechnung, Anfahrt im Kreisbogen gemäss P5
+ */
 void calcDriveAngle () {
     Points middleDoor;
     middleDoor.dist = (doorPoints[0].dist + doorPoints[1].dist) / 2;
@@ -332,8 +374,10 @@ void calcDriveAngle () {
     status = 2;
 }
 
+/**
+ * Korrektur LIDAR-Versatz zum Rollstuhlmittelpunkt
+ */
 void wheelchairGeomtryCorrection() {
-    //Korrektur Sensorversatz zum Mittelpunkt des Rollstuhls
     doorPoints[0].x -= 37;
     doorPoints[0].y += 26;
     doorPoints[1].x -= 37;
@@ -343,8 +387,6 @@ void wheelchairGeomtryCorrection() {
     doorPoints[0].y *= (-1);
     doorPoints[1].x *= (-1);
     doorPoints[1].y *= (-1);
-
-
 
     float angleRad;
     doorPoints[0].dist = sqrtf(pow( doorPoints[0].x,2)+pow( doorPoints[0].y,2));
@@ -377,8 +419,11 @@ void wheelchairGeomtryCorrection() {
     Serial.println(doorPoints[1].angle);
 }
 
+/**
+ * Fahrwegberechnung mit Drehen auf der Stelle und Gerader Vorwärtsfahrt
+ * @param nextStatus
+ */
 void driveCommandDirect (int nextStatus) {
-
     wheelchairGeomtryCorrection();
 
     Points middleDoor;
@@ -402,14 +447,12 @@ void driveCommandDirect (int nextStatus) {
     Serial.print("Distanz: ");
     Serial.println(middleDoor.dist);
 
-    //if (status == 1) {
-
     Vector w, m;
     w.x = (doorPoints[1].x - doorPoints[0].x);
     w.y = (doorPoints[1].y - doorPoints[0].y);
 
     //Distanz in x-Richtung zum Türmittelpunkt
-    //Vorlagerung des ORientierungspunktes
+    //Vorlagerung des Orientierungspunktes
     m.x = 90;
     m.y = (-m.x*w.x) / w.y;
 
@@ -443,10 +486,9 @@ void driveCommandDirect (int nextStatus) {
     Serial.print("Winkel Phi2: ");
     Serial.println(phi2);
 
-    //}
-
     status = nextStatus;
 }
+
 
 void detectDoor (int edgeThreshold, int nextStatus) {
     doorIndex = 0;
